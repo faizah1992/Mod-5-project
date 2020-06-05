@@ -11,25 +11,26 @@ export default  function Homepage(props){
     let history = useHistory()
     return(
         <div>
-        <Segment className="main-header">
-        <Link to={`/`}><img className="logo" src='https://scontent.fhou1-1.fna.fbcdn.net/v/t31.0-8/12898252_115781748819169_5140743774705995608_o.jpg?_nc_cat=100&_nc_sid=85a577&_nc_ohc=GLHpfjUJxFsAX8-xc6f&_nc_ht=scontent.fhou1-1.fna&oh=0e6f47d0e199759827567f223b9aed43&oe=5EFE9D14'/></Link>
-        </Segment>
-        
-        <Header style={{ marginBottom: '50px' }}>
-        <Navbar.Body>
-        <Nav>
-            <Nav.Item onClick={() => history.push('/')} >Home</Nav.Item>
-            <Nav.Item onClick={() => history.push('/items')}>Kurtis</Nav.Item>
-            <Nav.Item>Luxe-Pret</Nav.Item>
-            <Nav.Item>Casual-Wear</Nav.Item>
-            <Nav.Item>Formal-Wear</Nav.Item>
-            <Nav.Item onClick={() => history.push('/about')}>About</Nav.Item>
-        </Nav>
-        </Navbar.Body>
-        </Header>
-        <Divider/>
+            {/* <Divider/>
+         <Segment className="main-header">
+         <Link to={`/`}><img className="logo" src='https://scontent.fhou1-1.fna.fbcdn.net/v/t31.0-8/12898252_115781748819169_5140743774705995608_o.jpg?_nc_cat=100&_nc_sid=85a577&_nc_ohc=GLHpfjUJxFsAX8-xc6f&_nc_ht=scontent.fhou1-1.fna&oh=0e6f47d0e199759827567f223b9aed43&oe=5EFE9D14'/></Link>
+         </Segment> */}
+{/*         
+          <Header style={{ marginBottom: '50px' }}>
+         <Navbar.Body>
+         <Nav>
+             <Nav.Item onClick={() => history.push('/')} >Home</Nav.Item>
+            <Nav.Item onClick={() => history.push('/kurtis')}>Kurtis</Nav.Item>
+             <Nav.Item onClick={() => history.push('/casual-wear')}>Casual-Wear</Nav.Item>
+             <Nav.Item onClick={() => history.push('/luxe-pret')}>Luxe-Pret</Nav.Item>
+             <Nav.Item onClick={() => history.push('/evening-wear')}>Evening-wear</Nav.Item>
+             <Nav.Item onClick={() => history.push('/about')}>About</Nav.Item>
+         </Nav>
+         </Navbar.Body>
+         </Header> 
+        <Divider/>   */}
 
-        <Carousel autoplay className="custom-slider">
+         <Carousel autoplay className="custom-slider">
             <img
             src="https://scontent.fhou1-2.fna.fbcdn.net/v/t1.0-9/38744327_606137156450290_6359245603431514112_n.jpg?_nc_cat=108&_nc_sid=110474&_nc_ohc=H6r5c7ZAPR4AX_gwXOg&_nc_ht=scontent.fhou1-2.fna&oh=4e4bca09c36741ac5f5a417f3c480a78&oe=5EFFD992"
              
@@ -43,7 +44,7 @@ export default  function Homepage(props){
             height="1000"
             />
            
-        </Carousel>
-        </div>
+         </Carousel> 
+         </div> 
     )
 }

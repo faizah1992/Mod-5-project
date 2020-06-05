@@ -7,7 +7,7 @@ class CreateItems < ActiveRecord::Migration[6.0]
       t.integer :size_s_quantity 
       t.integer :size_m_quantity
       t.integer :size_l_quantity 
-      t.integer :size_xxl_quantity 
+      t.integer :size_xl_quantity 
       t.string :description
       t.string :image
       t.float :price
