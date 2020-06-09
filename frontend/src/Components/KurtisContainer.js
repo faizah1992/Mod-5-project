@@ -9,7 +9,7 @@ export default function KurtisContainer() {
 
 let itemsState = useSelector(state=>state.items)
 // console.log(itemsState.items)
-let filteredKurtis = itemsState.items.filter(item => item.category === "Kurtis" ) 
+let filteredKurtis = itemsState.filter(item => item.category === "Kurtis" ) 
 // console.log(filteredKurtis)
 
 

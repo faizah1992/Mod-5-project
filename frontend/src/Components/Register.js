@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom';
-import { Form, FormGroup, FormControl, ControlLabel, Button, ButtonToolbar, FlexboxGrid, Panel } from 'rsuite';
+import { Message, Form, FormGroup, FormControl, ControlLabel, Button, ButtonToolbar, FlexboxGrid, Panel } from 'rsuite';
 import {useDispatch, useSelector} from 'react-redux'
 
 export default function Register(props) {
+    let message = useSelector(state => state.message)
+    let dispatch = useDispatch()
     let history = useHistory()
     const initialValues = {
         first_name: '',
@@ -31,7 +33,7 @@ export default function Register(props) {
         .then(resp => resp.json())
         .then(newUser => {
             console.log(newUser)
-        //  newUser.setForm(initialValues)
+            dispatch({type:"SIGNUP", message: "Successfull"})
         })
       }
 
@@ -40,9 +42,10 @@ export default function Register(props) {
     return(
 <FlexboxGrid align="middle" justify="center">
             <FlexboxGrid.Item colspan={12}>
-                <Panel header={<h3>Sign Up</h3>} bordered>
+                <Panel header={<h3>Register</h3>} bordered>
                     <Form formValue={user} fluid>
                         <FormGroup>
+                        {message != '' ?  <Message type="success" description={message}>Test</Message>: null}
                             <ControlLabel>First Name</ControlLabel>
                             <FormControl 
                                 name='first_Name'  

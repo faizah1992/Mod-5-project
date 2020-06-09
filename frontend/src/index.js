@@ -7,14 +7,16 @@ import mainReducer from './Redux/Reducers/mainReducer'
 import {createStore} from 'redux';
 import {Provider} from 'react-redux'
 
+let initialstate = {user : null, items: [], errorMessage: "", message: '', cartItems: []};
 
-const store = createStore(mainReducer)
+console.log()
+const store = createStore(mainReducer,initialstate, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 ReactDOM.render(
   <Provider store = {store}>
     <App />
-  </Provider>
-  ,document.getElementById('root')
+  </Provider>,
+  document.getElementById('root')
 );
 
 

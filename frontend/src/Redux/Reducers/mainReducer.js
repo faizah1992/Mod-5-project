@@ -2,11 +2,10 @@ import { combineReducers } from "redux";
 import itemsReducer from './itemReducer'
 import userReducer from './userReducer'
 
-const mainReducer = combineReducers({
-    items: itemsReducer,
-    user: userReducer,
-  
-});
-
+function mainReducer (currentState, action){
+    currentState = itemsReducer(currentState,action)
+    currentState = userReducer(currentState, action)
+    return currentState
+}
 
 export default mainReducer;
