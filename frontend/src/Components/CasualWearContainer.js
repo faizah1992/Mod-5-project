@@ -6,8 +6,8 @@ import { Row, Form, FormGroup, FormControl, Divider } from 'rsuite';
 export default function CasualWearContainer() {
 
     let itemsState = useSelector(state=>state.items)
-    // console.log(itemsState.items)
-    let filteredCasuals = itemsState.items.filter(item => item.category === "Casual-Wear" ) 
+    // console.log(itemsState)
+    let filteredCasuals = itemsState.filter(item => item.category === "Casual-Wear" ) 
     // console.log(filteredCasuals)
     
   

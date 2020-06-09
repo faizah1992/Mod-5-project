@@ -7,7 +7,7 @@ export default function LuxePretContainer() {
 
     let itemsState = useSelector(state=>state.items)
     // console.log(itemsState.items)
-    let filteredLuxe = itemsState.items.filter(item => item.category === "Luxe-Pret" ) 
+    let filteredLuxe = itemsState.filter(item => item.category === "Luxe-Pret" ) 
     // console.log(filteredLuxe)
     
 

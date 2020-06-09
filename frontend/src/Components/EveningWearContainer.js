@@ -7,7 +7,7 @@ export default function EveningWearContainer() {
 
     let itemsState = useSelector(state=>state.items)
     // console.log(itemsState.items)
-    let filteredEveningWear = itemsState.items.filter(item => item.category === "Evening-Wear" ) 
+    let filteredEveningWear = itemsState.filter(item => item.category === "Evening-Wear" ) 
     // console.log(filteredEveningWear)
     
   

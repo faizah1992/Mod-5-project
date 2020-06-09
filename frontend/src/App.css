@@ -38,14 +38,17 @@
 
 /* Navbar */
 .navbar{
-  width:1425px;
+  width:1435px;
   margin:0 auto;
 }
 
 
 /* header */
 .logo{
-  width: 160px;
+  float:middle;
+  width: 200px;
+  margin-top: -3%;
+  margin-left: 6%
 }
 .custom-slider{
   width: 50%; 
@@ -55,16 +58,31 @@
   height: 130px;
   background-color: white;
 }
-.icon{
-  float:right;
+.search-bar{
+  float:left;
   position: relative;
   margin-left: 1.5%;
 }
+.dropdown{
+  position: relative;
+  display: inline-block;
+  margin-right: 1.5%;
+  float: right;
+}
 .user-icon{
   float:right;
-  position: relative;
-  margin-left: 1.5%;
+  
+  margin-left:13%;
+  color: black;
+  position: absolute;
+    right: 30px;
+    top: 10px;
 
+}
+.rs-dropdown-menu{
+  position: absolute;
+    right: 30px;
+    top: 10px;
 }
 .cart-icon{
   float:right;
