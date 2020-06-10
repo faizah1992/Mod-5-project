@@ -7,7 +7,10 @@ import { Button, FlexboxGrid, Divider, Dropdown } from 'rsuite'
 export default function ItemDetails(props) {
 
     let dispatch = useDispatch()
-    let [cart, setCart] = useState([])
+
+    let [size, setSize] = useState(
+     null
+    )
     let params = useParams()
     let [item, setItem] = useState({
         name: '',
@@ -23,10 +26,8 @@ export default function ItemDetails(props) {
         category:''
     })
 
-    let [size, setSize] = useState(
-        null
-    )
-    // let itemsState = useSelector(state=>state.items)
+
+    // let itemObj = useSelector(state=>state.items.find(item=>item.id === params.id))
     // console.log(itemsState.items)
 
     useEffect(() => {
@@ -38,10 +39,6 @@ export default function ItemDetails(props) {
           })
         }, [])
 
-        const handleAddtoCart = (e) => {
-            let newCart = cart.concat([item,size])
-            setCart(newCart)        
-        }
     return(
         <div>
             <FlexboxGrid align="middle">
@@ -67,7 +64,7 @@ export default function ItemDetails(props) {
                     <Dropdown.Item quatity= {item.size_xl_quantity} onClick={()=> setSize("XL")}>XL</Dropdown.Item>: ''}                    
                     </Dropdown>
                     <br />
-                    <Button appearance="primary" onClick={()=> dispatch({type: "ADD_ITEM", cartItems: {item, size}}, {handleAddtoCart})}>Add To Cart</Button>
+                    <Button appearance="primary" onClick={()=> props.createCartItem(item, size)}>Add To Cart</Button>
                 </FlexboxGrid.Item>
             </FlexboxGrid>
         </div>
