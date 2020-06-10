@@ -130,14 +130,10 @@ item8 = Item.create({
 
 
 
+order1 = Order.create({user_id: faizah.id, total: 35})
+order2 = Order.create({user_id: tahsin.id, total: 20})
 
-
-
-
-order1 = Order.create({user_id: faizah.id, paid: true, total: 35})
-order2 = Order.create({user_id: tahsin.id, paid: false, total: 20})
-
-orderitem1 = OrderItem.create({order_id: order1.id, item_id: item2.id, quantity: 2})
-orderitem2 = OrderItem.create({order_id: order2.id, item_id: item1.id, quantity: 1})
+orderitem1 = OrderItem.create({order_id: order1.id, item_id: item2.id, quantity: 2, size: "L"})
+orderitem2 = OrderItem.create({order_id: order2.id, item_id: item1.id, quantity: 1, size: "L"})
 
 review = Review.create({item: item2, user: tahsin, comment: "Great design", rating:8})
