@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import {connect, useSelector} from 'react-redux';
 import { withRouter } from 'react-router-dom'
 import logo from './logo.svg';
@@ -21,16 +21,18 @@ import  AboutPage   from './Components/AboutPage'
 import NavBar from './Components/NavBar'
 import Logout from './Components/Logout'
 import Cart from './Components/Cart'
+import Search from './Components/Search'
+import Profile from './Components/Profile'
+import PastOrders from './Components/PastOrders'
+import Refund from './Components/Refund'
 
 
  function App(props) {
 
   let history =useHistory()
   let user = useSelector(state => state.user)
-
   let dispatch = useDispatch()
-  
-  
+
   useEffect(()=>{
   fetch('http://localhost:3000/items')
   .then(resp => resp.json())
@@ -40,18 +42,37 @@ import Cart from './Components/Cart'
   })
 }, [])
 
+  useEffect(()=>{
+  fetch('http://localhost:3000/getuser', {
+    credentials: 'include'
+  })
+  .then(resp => resp.json())
+  .then(user=> {
+    console.log(user)
+    if (user){
+     dispatch({type:"SAVE_USER", user: user})
+    }
+  })
+}, [])
 
-
-//   useEffect(()=>{
-//   fetch('http://localhost:3000/checkuser')
-//   .then(resp => resp.json())
-//   .then(user=> {
-//     console.log(user)
-//     if (user){
-//      dispatch({type:"SAVE_USER", user: user.user})
-//     }
-//   })
-// }, [])
+let createCartItem = (cartItem, size)=>{
+  fetch('http://localhost:3000/cart_items',{
+    credentials: 'include',
+    method: "POST",
+    headers:{
+      "content-type": "application/json"
+    },
+    body: JSON.stringify({cartItem, size})
+  })
+  .then(r => r.json())
+  .then((response) => {   
+    
+      console.log(response)
+    dispatch({type:"ADD_ITEM", cartItems: response}) 
+    // history.push('/')
+    
+  })
+}
 
 
 
@@ -66,10 +87,14 @@ import Cart from './Components/Cart'
       <Route exact path="/casual-wear" component= {CasualWearContainer} />
       <Route exact path="/luxe-pret" component= {LuxePretContainer} />
       <Route exact path="/evening-wear" component= {EveningWearContainer} />
-      <Route exact path="/items/:id" component={ItemDetails}/>
+      <Route exact path="/items/:id" component={()=><ItemDetails createCartItem={createCartItem}/>}/>
       <Route exact path="/register" component={Register}/>
       <Route exact path="/login" component={Login}/>
       <Route exact path="/cart" component={Cart}/>
+      <Route exact path="/profile" component={Profile}/>
+      <Route exact path="/pastorders" component={PastOrders}/>
+      <Route exact path="/search" component={Search}/>
+      <Route exact path="/return-refund-policy" component={Refund}/>
       </Switch>
       <Footer/>
       </BrowserRouter>

@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px; 
 }
 .App-logo {
   height: 40vmin;
@@ -47,8 +52,8 @@
 .logo{
   float:middle;
   width: 200px;
-  margin-top: -3%;
-  margin-left: 6%
+  margin-top: -4.5%;
+  margin-left: 10%
 }
 .custom-slider{
   width: 50%; 
@@ -58,15 +63,20 @@
   height: 130px;
   background-color: white;
 }
-.search-bar{
-  float:left;
+.search-icon{
+  float:right;
   position: relative;
   margin-left: 1.5%;
+}
+.search-bar{
+  float:middle;
+  position: absolute;;
+  margin-left: 36%;
 }
 .dropdown{
   position: relative;
   display: inline-block;
-  margin-right: 1.5%;
+  margin-right: -1%;
   float: right;
 }
 .user-icon{
@@ -91,9 +101,75 @@
 
 }
 
+/* Profile */
+
+
+
 
 
 /* footer deign */
 .footer{
   background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
+.amex{
+  float:right;
+  position: relative;
+  right: 40px;
+  color: white
+}
+.visa{
+  float:right;
+  position: relative;
+  right: 30px; 
+  color: white
+
+}
+.mc{
+  float:right;
+  position: relative;
+  right: 50px;
+  color: white
+}
+.stripe{
+  float:right;
+  position: relative;
+  right: 60px;
+  color: white
+}
+.fb{
+  float:middle;
+  position: relative;
+  bottom:-11px;
+}
+.insta{
+  float:middle;
+  position: relative;
+  bottom:-11px;
+}
+.about{
+  float:left;
+  position: relative;
+  right:-20px;
+  color: white
+}
+.contact{
+  float:left;
+  position: relative;
+  right:-30px;
+  color: white
+}
+.refund{
+  float:left;
+  position: relative;
+  right:-40px;
+  color: white
+}
+.refund-policy{
+    float:middle;
+    position: relative;
+}
+
+

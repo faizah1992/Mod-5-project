@@ -44,10 +44,6 @@ export default function Login(props){
     })
 }
 
-// let persisUser = (){
-//     fetch
-// }
-
 
     return(
         <FlexboxGrid justify="center">
