@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
   resources :items
   resources :users
-  get('/checkuser', to: 'users#current_user')
   resources :reviews
   resources :order_items
   resources :orders
+  resources :carts
+  resources :cart_items
   
-  
+  get('/getuser', to: 'users#get_user')
   post('/login', to: 'authentication#login')
+  get('/login', to: 'authentication#get_session_user')
   get('/logout', to: 'authentication#logout')
   
   

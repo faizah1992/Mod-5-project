@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_02_204428) do
+ActiveRecord::Schema.define(version: 2020_06_09_191443) do
+
+  create_table "cart_items", force: :cascade do |t|
+    t.integer "cart_id"
+    t.integer "item_id"
+    t.integer "quantity"
+    t.string "size"
+  end
+
+  create_table "carts", force: :cascade do |t|
+    t.integer "user_id"
+  end
 
   create_table "items", force: :cascade do |t|
     t.string "name"
@@ -32,13 +43,13 @@ ActiveRecord::Schema.define(version: 2020_06_02_204428) do
     t.integer "order_id"
     t.integer "item_id"
     t.integer "quantity"
+    t.string "size"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "orders", force: :cascade do |t|
     t.integer "user_id"
-    t.boolean "paid"
     t.float "total"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

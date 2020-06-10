@@ -17,8 +17,10 @@ class UsersController < ApplicationController
                 phone_number: params[:phone_number],
                 address: params[:address]
             })
-
-            render(json: user)
+            cart = Cart.create({
+                user_id: user.id
+            })
+            render(json: user, :include => [:cart => {:include => [:cart_items]}])
         else
             render(json: ["Email already exists."])
         end
@@ -30,16 +32,10 @@ class UsersController < ApplicationController
         render(json: user)
     end 
 
-    def define_current_user
-        if params[:id]
-            @current_user = User.find(params[:id])
-        else
-            @current_user = User.new
-        end
+    
+    def get_user
+       render json: self.current_user
     end
 
-    def current_user
-        @current_user
-    end
 
 end
