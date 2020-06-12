@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get('/login', to: 'authentication#get_session_user')
   get('/logout', to: 'authentication#logout')
   
+ 
   
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

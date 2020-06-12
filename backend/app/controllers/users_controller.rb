@@ -20,7 +20,7 @@ class UsersController < ApplicationController
             cart = Cart.create({
                 user_id: user.id
             })
-            render(json: user, :include => [:cart => {:include => [:cart_items]}])
+            render(json: user, :include => [:cart, :cart_items])
         else
             render(json: ["Email already exists."])
         end
@@ -34,7 +34,8 @@ class UsersController < ApplicationController
 
     
     def get_user
-       render json: self.current_user
+        user = {user: self.current_user, cart_items: self.current_user.cart.cart_items.as_json(include: :item)}
+       render(json: user)
     end
 
 

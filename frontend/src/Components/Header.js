@@ -1,6 +1,6 @@
 import React, { Component, useState } from 'react';
 import {Link, useHistory} from 'react-router-dom'
-import { Divider, Panel, Icon, Dropdown, Input, InputGroup } from 'rsuite'
+import { Divider, Panel, Icon, Dropdown, Input, InputGroup,Badge } from 'rsuite'
 import NavBar from './NavBar';
 import '../App.css'
 import { useSelector, useDispatch } from 'react-redux';
@@ -9,8 +9,9 @@ import { useSelector, useDispatch } from 'react-redux';
 export default function Header(props) {
     let dispatch = useDispatch()
     let user = useSelector(state => state.user)
-    
+    let cartItems = useSelector(state => state.cartItems)
     let history = useHistory()
+    let cartCount = cartItems? cartItems.map(ct => ct.quantity).reduce((total,num)=>{return total +num}, 0) : null 
 
 
     let handleLogout = () => {
@@ -35,7 +36,8 @@ export default function Header(props) {
         <Panel className="main-header">
         <a href= "/"><img className="logo" src='http://tiny.cc/7urjqz' /></a>       
         <Icon className="search-icon" size='2x'icon='search' className="search-icon" onClick= {()=>history.push('/Search')}/>
-        <Icon  className="cart-icon"  size='2x' icon='shopping-cart' onClick= {()=>history.push('/cart')}/>
+        <Divider vertical/>
+        <Icon  className="cart-icon"  size='2x' icon='shopping-cart' onClick= {()=>history.push('/cart')}>{cartCount> 0 ? <Badge className="cartCount" content= {cartCount}></Badge>:null}</Icon>
         <Dropdown className='dropdown' icon={<Icon  size='1px' icon="user-o"  />}>
        {!user ? 
         <>

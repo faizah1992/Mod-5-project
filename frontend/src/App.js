@@ -47,33 +47,14 @@ import Refund from './Components/Refund'
     credentials: 'include'
   })
   .then(resp => resp.json())
-  .then(user=> {
-    console.log(user)
-    if (user){
-     dispatch({type:"SAVE_USER", user: user})
+  .then(response=> {
+    console.log(response)
+    if (response.error == undefined){
+     dispatch({type:"SAVE_USER", user: response.user})
+     dispatch({type: "CURRENT_USER_CART", cartItems: response.cart_items })
     }
   })
 }, [])
-
-let createCartItem = (cartItem, size)=>{
-  fetch('http://localhost:3000/cart_items',{
-    credentials: 'include',
-    method: "POST",
-    headers:{
-      "content-type": "application/json"
-    },
-    body: JSON.stringify({cartItem, size})
-  })
-  .then(r => r.json())
-  .then((response) => {   
-    
-      console.log(response)
-    dispatch({type:"ADD_ITEM", cartItems: response}) 
-    // history.push('/')
-    
-  })
-}
-
 
 
   return (
@@ -87,7 +68,7 @@ let createCartItem = (cartItem, size)=>{
       <Route exact path="/casual-wear" component= {CasualWearContainer} />
       <Route exact path="/luxe-pret" component= {LuxePretContainer} />
       <Route exact path="/evening-wear" component= {EveningWearContainer} />
-      <Route exact path="/items/:id" component={()=><ItemDetails createCartItem={createCartItem}/>}/>
+      <Route exact path="/items/:id" component={ItemDetails}/>
       <Route exact path="/register" component={Register}/>
       <Route exact path="/login" component={Login}/>
       <Route exact path="/cart" component={Cart}/>
@@ -105,3 +86,13 @@ let createCartItem = (cartItem, size)=>{
 
 export default App;
     
+
+ // fetch('http://localhost:3000/cart_items',{
+    //   credentials: 'include'
+    // })
+    // .then(resp => resp.json())
+    // .then(items =>{
+      // console.log(user)
+    //   // let currentItems= items.filter(ct => ct.cart.id === user.cart.id)
+    //   // console.log(currentItems)
+    // })
