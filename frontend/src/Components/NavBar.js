@@ -13,7 +13,7 @@ export default  function NavBar(props){
     let history = useHistory()
     let dispatch = useDispatch()
    
-    console.log(user)
+    // console.log(user)
     return(
         <div>
 

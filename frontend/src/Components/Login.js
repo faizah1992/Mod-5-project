@@ -35,6 +35,7 @@ export default function Login(props){
       
       if (response.success){
       dispatch({type:"SAVE_USER",user:response.user}) 
+      dispatch({type: "CURRENT_USER_CART", cartItems: response.cart_items })
       history.push('/')
       }
       else{

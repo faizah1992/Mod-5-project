@@ -7,6 +7,7 @@ import { Button, FlexboxGrid, Divider, Dropdown } from 'rsuite'
 export default function ItemDetails(props) {
 
     let dispatch = useDispatch()
+    let user =useSelector(state => state.user)
 
     let [size, setSize] = useState(
      null
@@ -39,14 +40,34 @@ export default function ItemDetails(props) {
           })
         }, [])
 
+    let createCartItem = (cartItem, size)=>{
+        fetch('http://localhost:3000/cart_items',{
+        credentials: 'include',
+        method: "POST",
+        headers:{
+         "content-type": "application/json"
+        },
+         body: JSON.stringify({cartItem, size})
+        })
+        .then(r => r.json())
+        .then((response) => {   
+              
+        console.log(response)
+        dispatch({type:"ADD_ITEM", cartItems: response}) 
+              // history.push('/')
+              
+        })
+    }
+          
+
     return(
         <div>
             <FlexboxGrid align="middle">
                 <FlexboxGrid.Item colspan={12}>
                     <img src={item.image} style={{ width: '100%' }} />
                 </FlexboxGrid.Item>
-                <FlexboxGrid.Item colspan={2}></FlexboxGrid.Item>
-                <FlexboxGrid.Item colspan={10} align='center'>
+                <FlexboxGrid.Item colspan={-10}></FlexboxGrid.Item>
+                <FlexboxGrid.Item colspan={10} align='left'>
                     <h3>{item.name}</h3>
                     <Divider />
                     <h4>Sku Number: {item.sku_number}</h4>
@@ -64,7 +85,11 @@ export default function ItemDetails(props) {
                     <Dropdown.Item quatity= {item.size_xl_quantity} onClick={()=> setSize("XL")}>XL</Dropdown.Item>: ''}                    
                     </Dropdown>
                     <br />
-                    <Button appearance="primary" onClick={()=> props.createCartItem(item, size)}>Add To Cart</Button>
+                    {!user?
+                    <Button appearance="primary" disabled > Login to Add To Cart</Button>
+                    :
+                    <Button appearance="primary" onClick={()=> createCartItem(item, size)}>Add To Cart</Button>
+                    }
                 </FlexboxGrid.Item>
             </FlexboxGrid>
         </div>

@@ -171,5 +171,38 @@
     float:middle;
     position: relative;
 }
-
-
+/* CART */
+.empty_cart{
+  float:right;
+  position: relative;
+  left:80px;
+  color: white
+}
+.cartcount{
+  position: absolute;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-family: 'Monda', sans-serif;
+  top: 6px;
+  right: 165px;
+}
+.cartProductImage{
+  width: 1px;
+  height:100%
+}
+.total-card{
+  margin-left: 9vw;
+  margin-right: 5vw;
+  background-color:FloralWhite;
+  border: 0;
+  margin-top: 6vw;
+  width: 34vw;
+  height: 38vh;
+  
+}
+.table{
+float: middle;
+position: relative;
+}

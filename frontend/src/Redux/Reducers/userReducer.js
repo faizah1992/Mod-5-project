@@ -3,7 +3,7 @@
 const userReducer = (state , action) => {
   let user = action.user;
 
-  console.log(user);
+  // console.log(user);
   switch (action.type) {
     case "SAVE_USER":
       return {
@@ -11,7 +11,7 @@ const userReducer = (state , action) => {
         user: action.user
       };
       break
-    
+ 
     
     case "FAIL_LOGIN":
       return{
@@ -23,7 +23,7 @@ const userReducer = (state , action) => {
 
     case "LOG_OUT":
         return{
-            ...state, user: undefined
+            ...state, user: undefined, cartItems: []
         }
         break
     case "SIGNUP":

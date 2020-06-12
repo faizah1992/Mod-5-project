@@ -5,7 +5,7 @@ class AuthenticationController < ApplicationController
         user = User.find_by({email: params[:email]})
     if (user && user.authenticate(params[:password]))
         session[:user_id] = user.id
-        render(json: {success: true, user: user})
+        render(json: {success: true, user: user, cart_items: user.cart.cart_items.as_json(include: :item)})
     else 
         render(json: {success: false, user: nil, message:'Not logged in.'})
     end
