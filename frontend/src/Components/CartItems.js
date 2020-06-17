@@ -13,20 +13,25 @@ export default function CartItems(props) {
     let cartItems = useSelector(state=>state.cartItems)
     let dispatch = useDispatch()
     // console.log(props.cartItem)
+
+
     let handleDelete =()=>{
-    
     fetch(`http://localhost:3000/cart_items/${props.cartItem.id}`, {
       method : 'DELETE',
       headers: {
         "content-type": "application/json"
       }
     })
-
         let filteredCart = cartItems.filter(ct => ct.id !== props.cartItem.id)
         dispatch({type: "REMOVE_ITEM", cartItems: filteredCart })
     }
 
+
+
     let handleQuantity = (cartItem, quantity)=>{
+      if (quantity < 0){
+        quantity = 0
+      }
        console.log(quantity)
         fetch(`http://localhost:3000/cart_items/${cartItem.id}`,{
         credentials: 'include',
@@ -38,11 +43,8 @@ export default function CartItems(props) {
         })
         .then(r => r.json())
         .then((response) => {   
-         
-        console.log(response)
-        
-        dispatch({type:"UPDATE_ITEM", cartItem: response}) 
-              
+        console.log(response) 
+          dispatch({type:"UPDATE_ITEM", cartItem: response}) 
         })
     }
     // debugger
@@ -53,7 +55,7 @@ export default function CartItems(props) {
        
         <div >
         <Col md={18} sm={2}>
-        <Panel shaded  style={{verticalAlign: 'middle', height: '450px'}} align='center'>
+        <Panel shaded  style={{verticalAlign: 'middle', height: '460px'}} align='center'>
         <img src={image} style={{ display: 'inline-block', width: '80%'}} />
         <Divider/>
         {name}<Divider vertical/>{size} <Divider vertical/>${price}
@@ -71,16 +73,4 @@ export default function CartItems(props) {
 }
 
 
-    //    <Container pullright>
-    //     <Col md={6} sm={2}>
-    //     <Panel shaded onClick={() => history.push(`/items/${props.cartItem.item.id}`)} style={{verticalAlign: 'middle', height: '450px'}} align='center'>
-    //     <img src={props.cartItem.item.image} style={{ display: 'inline-block', width: '80%'}} />
-    //     {props.cartItem.item.name} <Divider vertical/><IconButton icon={<Icon icon="star" />} circle size="lg" />
-        
-    //     </Panel>
-    //     <span>${props.cartItem.item.price}</span>
-    //     </Col> 
-    //     </Container>
-    //     <Container>
-    //     <span>${props.cartItem.item.price}</span>
-    //     </Container>
+    

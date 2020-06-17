@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {useDispatch, useSelector} from 'react-redux'
 import  ItemCard  from './ItemCard'
-import { Row, Form, FormGroup, FormControl, Divider } from 'rsuite';
+import { Row, Form, FormGroup, FormControl, Divider, Breadcrumb } from 'rsuite';
+import {Link} from 'react-router-dom'
 
 export default function CasualWearContainer() {
 
@@ -13,7 +14,12 @@ export default function CasualWearContainer() {
   
       return(
           <div>
-            <h1>Casual-Wear</h1>
+              <Breadcrumb>
+              <Link to={'/'}><Breadcrumb.Item >Home</Breadcrumb.Item></Link>
+              <Breadcrumb.Item active>Casualwear</Breadcrumb.Item>
+              </Breadcrumb>
+            <h3>Casual-Wear</h3>
+            <br></br>
            <Row>
              {filteredCasuals.map(item => <ItemCard item={item} key={item.id}/>)}
            </Row>

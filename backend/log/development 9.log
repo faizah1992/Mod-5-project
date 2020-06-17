@@ -1,0 +1,632 @@
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (2.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 17]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 18]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (1.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 19]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 20]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 21]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (1.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 22]]
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (1.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 23]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 24]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (1.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 25]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 26]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 27]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (1.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 28]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (24.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 29]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (1.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 30]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 31]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 32]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 33]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 9]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (1.9ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 10]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 11]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 12]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 13]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 14]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 15]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 16]]
+  [1m[35m (31.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 17]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReview Destroy (0.9ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Destroy (0.5ms)[0m  [1m[31mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Destroy (0.3ms)[0m  [1m[31mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Destroy (0.3ms)[0m  [1m[31mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 5]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Destroy (0.4ms)[0m  [1m[31mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Destroy (0.4ms)[0m  [1m[31mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Destroy (0.4ms)[0m  [1m[31mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mOrderItem Load (0.3ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrderItem Destroy (1.6ms)[0m  [1m[31mDELETE FROM "order_items" WHERE "order_items"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrderItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "order_items" WHERE "order_items"."id" = ?[0m  [["id", 4]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrderItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "order_items" WHERE "order_items"."id" = ?[0m  [["id", 5]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrderItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "order_items" WHERE "order_items"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (2.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Robt"], ["last_name", "Rau"], ["email", "mariano@schmitt.net"], ["password_digest", "$2a$12$E9pTXQZ/5RBJXDnZhRH60OMriLjp2jIh4DSAbIDlx1ihfTq1NI2.."], ["phone_number", 907], ["address", "51112 Simonis Flats, East Dusty, AZ 70922"], ["created_at", "2020-06-13 21:00:54.941905"], ["updated_at", "2020-06-13 21:00:54.941905"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (3.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Mariella"], ["last_name", "Mayer"], ["email", "faye@considine.info"], ["password_digest", "$2a$12$uMl9J2yENqbwsgTP9A5RguQGUiOgbn7IR9UHRdsyoCIF267rOXnLe"], ["phone_number", 1], ["address", "Suite 635 4815 Parker Turnpike, West Dougport, AZ 59782-6367"], ["created_at", "2020-06-13 21:00:55.219702"], ["updated_at", "2020-06-13 21:00:55.219702"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Otto"], ["last_name", "Sawayn"], ["email", "wally_pouros@jacobson.net"], ["password_digest", "$2a$12$jStrXyxsriQxIf7xgwOzcOh6.lcaD/P.O7.QFosdNkxVl7SP1Gpqi"], ["phone_number", 0], ["address", "999 Jaskolski Throughway, South Dorlamouth, GA 07329-7128"], ["created_at", "2020-06-13 21:00:55.482937"], ["updated_at", "2020-06-13 21:00:55.482937"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Azucena"], ["last_name", "Spencer"], ["email", "andre@ziemann-collins.name"], ["password_digest", "$2a$12$s8hQkIS7ySnpDyq7vkCRBu5N.zm6GJ6ZIUZ4hEP/DmWx/YOc4smiS"], ["phone_number", 0], ["address", "6099 Mohamed Islands, New Adolphmouth, TN 53101"], ["created_at", "2020-06-13 21:00:55.747215"], ["updated_at", "2020-06-13 21:00:55.747215"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Lelia"], ["last_name", "Zulauf"], ["email", "shonda@lueilwitz.org"], ["password_digest", "$2a$12$nBJ3mlXwC1Rbzwct0Bbhj.044JSFeD0yjPetmkcny3acZS2dWmVY2"], ["phone_number", 1], ["address", "979 Sena Ports, Steuberton, DE 86352-2528"], ["created_at", "2020-06-13 21:00:56.014951"], ["updated_at", "2020-06-13 21:00:56.014951"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Ray"], ["last_name", "Heidenreich"], ["email", "claudine.stracke@damore-volkman.com"], ["password_digest", "$2a$12$dIECaUWyy1QPL0vrHuKOEORgAeLzJzvUhdKH45xAMErEA24q8wgTe"], ["phone_number", 0], ["address", "642 Elena Circles, Napoleonside, SD 93638"], ["created_at", "2020-06-13 21:00:56.284870"], ["updated_at", "2020-06-13 21:00:56.284870"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Elvera"], ["last_name", "Kilback"], ["email", "erin_bergnaum@ratke.org"], ["password_digest", "$2a$12$CLd1NshGIhM5gjZVxGCKk.cbKiyMWwtRKs39ni/0lQYAYk79fN8Fe"], ["phone_number", 1], ["address", "Apt. 858 161 Emmerich Drive, Hodkiewiczhaven, KY 40039"], ["created_at", "2020-06-13 21:00:56.552113"], ["updated_at", "2020-06-13 21:00:56.552113"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Williemae"], ["last_name", "West"], ["email", "shyla@stanton.net"], ["password_digest", "$2a$12$Xm3NdBchKmhtEwupD3o7cOOkBFE7vhgYgrZLW19OD.BB9EID4Hx02"], ["phone_number", 0], ["address", "7560 Vandervort Mission, Port Adrianborough, IL 24463"], ["created_at", "2020-06-13 21:00:56.817435"], ["updated_at", "2020-06-13 21:00:56.817435"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Veronique"], ["last_name", "Ankunding"], ["email", "kristopher_runte@wintheiser-simonis.net"], ["password_digest", "$2a$12$EMid6FBVredXkXJOSj5ojesweNr5UELzc6dwQsaMWqpJVCBCxYEPG"], ["phone_number", 684], ["address", "407 Garland Trafficway, North Onitamouth, MA 31943-7238"], ["created_at", "2020-06-13 21:00:57.086551"], ["updated_at", "2020-06-13 21:00:57.086551"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Jeffry"], ["last_name", "Cronin"], ["email", "delmer@lakin.io"], ["password_digest", "$2a$12$.GcOg.3ks3uxiYvK2FCEVuWN/5IhUXsoz3AJ8kjbFaSMXW25VYJ8i"], ["phone_number", 0], ["address", "4141 Beahan Crossroad, Feilburgh, NY 73691-5966"], ["created_at", "2020-06-13 21:00:57.363423"], ["updated_at", "2020-06-13 21:00:57.363423"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Faizah"], ["last_name", "Ahsan"], ["email", "faizah@gmail.com"], ["password_digest", "$2a$12$zwjwurFSCjDrX8K9PJxWheMBeBmQEWe8M.8K.cf3OCdjvFw40Fdje"], ["phone_number", 1234567890], ["address", "123 main street, houston, texas 77004"], ["created_at", "2020-06-13 21:00:57.632270"], ["updated_at", "2020-06-13 21:00:57.632270"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Ahmed"], ["last_name", "Tahsin"], ["email", "tahsin@yahoo.com"], ["password_digest", "$2a$12$Xw2BD71yRcY4xVNfoz6KY.qXn.ZEfBFDlBkqEn8xPkRv/aCj5LnGC"], ["phone_number", 1234567890], ["address", "123 apple street, houston, texas 77003"], ["created_at", "2020-06-13 21:00:57.896466"], ["updated_at", "2020-06-13 21:00:57.896466"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.9ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Maroon High Low Tunic"], ["sku_number", "FAFK1802"], ["color", "Maroon"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Maroon high low tunic with peard and stone work on the sleeveline"], ["image", "http://tiny.cc/w49rqz"], ["price", 45.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:00:57.904302"], ["updated_at", "2020-06-13 21:00:57.904302"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Navy kurta with bell sleeves"], ["sku_number", "KMAY1901"], ["color", "Navy"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Double georgette kurti with pipe and thread embroidery."], ["image", "http://tiny.cc/k59rqz"], ["price", 40.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:00:57.910425"], ["updated_at", "2020-06-13 21:00:57.910425"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (1.1ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Peachy dream"], ["sku_number", "KMAR1904"], ["color", "Peach"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Peach kurti with striped back and small embroidery on the pocket"], ["image", "http://tiny.cc/k59rqz"], ["price", 35.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:00:57.915593"], ["updated_at", "2020-06-13 21:00:57.915593"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pastel Love"], ["sku_number", "KMAY1907"], ["color", "Powder blue"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Powder blue kurti with pipe work & printed muslin back a."], ["image", "http://tiny.cc/i79rqz"], ["price", 55.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:00:57.921926"], ["updated_at", "2020-06-13 21:00:57.921926"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Blush in pink"], ["sku_number", "KMAR1905"], ["color", "Pink"], ["size_s_quantity", 0], ["size_m_quantity", 1], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Powder pink musling kurti with beaded motif"], ["image", "http://tiny.cc/999rqz"], ["price", 45.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:00:57.928015"], ["updated_at", "2020-06-13 21:00:57.928015"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magenta Kurta "], ["sku_number", "FADJFK2001"], ["color", "Pink"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Magenta double georgette kurta with embroidery and bead work"], ["image", "http://tiny.cc/v8pnqz"], ["price", 60.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:00:57.932933"], ["updated_at", "2020-06-13 21:00:57.932933"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Powder pink Kurti"], ["sku_number", "KMAY1909"], ["color", "Pink"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Powder pink kurti with muslin panel and beaded motif on the sleeves"], ["image", "http://tiny.cc/6basqz"], ["price", 50.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:00:57.937476"], ["updated_at", "2020-06-13 21:00:57.937476"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Black & white love"], ["sku_number", "KMAY1908"], ["color", "Black"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Black & white double georgette kurti with embroidery borders"], ["image", "http://tiny.cc/5easqz"], ["price", 45.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:00:57.942688"], ["updated_at", "2020-06-13 21:00:57.942688"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Spring Time"], ["sku_number", "FADJFK2004"], ["color", "Yellow"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Ywlloe kurti with musline panel and sequin work"], ["image", "http://tiny.cc/jhasqz"], ["price", 55.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:00:57.954973"], ["updated_at", "2020-06-13 21:00:57.954973"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gray Lace Kurti"], ["sku_number", "FADJFK2005"], ["color", "Gray"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Gray double gerogette kurti with lace panel and cute muslin tie neckline"], ["image", "http://tiny.cc/oiasqz"], ["price", 40.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:00:57.961847"], ["updated_at", "2020-06-13 21:00:57.961847"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Black & Mint Kameez with Dupatta"], ["sku_number", "CAMAR1906"], ["color", "Black"], ["size_s_quantity", 1], ["size_m_quantity", 2], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Double georgette kameez with embroidered border & tiedyed dupatta"], ["image", "http://tiny.cc/obbsqz"], ["price", 70.0], ["category", "Casual-Wear"], ["created_at", "2020-06-13 21:00:57.967332"], ["updated_at", "2020-06-13 21:00:57.967332"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beige kameez with dupatta"], ["sku_number", "CAMAR1908"], ["color", "Beige"], ["size_s_quantity", 1], ["size_m_quantity", 2], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Double georgette kameez with intricate embroidery"], ["image", "http://tiny.cc/1bbsqz"], ["price", 70.0], ["category", "Casual-Wear"], ["created_at", "2020-06-13 21:00:57.972116"], ["updated_at", "2020-06-13 21:00:57.972116"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Peach Kameez with Dupatta"], ["sku_number", "CAMAR1906"], ["color", "Peach"], ["size_s_quantity", 1], ["size_m_quantity", 2], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Linen kameez with all over embroidery"], ["image", "http://tiny.cc/3dbsqz"], ["price", 65.0], ["category", "Casual-Wear"], ["created_at", "2020-06-13 21:00:57.976864"], ["updated_at", "2020-06-13 21:00:57.976864"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cream kameez with dupatta"], ["sku_number", "FAFCA1805"], ["color", "Cream"], ["size_s_quantity", 1], ["size_m_quantity", 2], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Cashmilan kameez with embroidered motif"], ["image", "http://tiny.cc/cebsqz"], ["price", 75.0], ["category", "Casual-Wear"], ["created_at", "2020-06-13 21:00:57.982255"], ["updated_at", "2020-06-13 21:00:57.982255"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Parrot green Kameez with Dupatta"], ["sku_number", "CAJUL1903"], ["color", "Green"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Cashmilan kameez with floral motif thread embroidery"], ["image", "http://tiny.cc/cgbsqz"], ["price", 70.0], ["category", "Casual-Wear"], ["created_at", "2020-06-13 21:00:57.987624"], ["updated_at", "2020-06-13 21:00:57.987624"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Off white Kameez with dupatta"], ["sku_number", "CAJUL1901"], ["color", "Off white"], ["size_s_quantity", 1], ["size_m_quantity", 0], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "double georgette kameez with thread embroidery"], ["image", "http://tiny.cc/mhbsqz"], ["price", 70.0], ["category", "Casual-Wear"], ["created_at", "2020-06-13 21:00:57.993113"], ["updated_at", "2020-06-13 21:00:57.993113"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mint Kameez with Dupatta"], ["sku_number", "CAFEB1901"], ["color", "Mint"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Double georgette kameez with thread embroidered"], ["image", "http://tiny.cc/bjbsqz"], ["price", 75.0], ["category", "Casual-Wear"], ["created_at", "2020-06-13 21:00:58.000164"], ["updated_at", "2020-06-13 21:00:58.000164"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.7ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Onion Pink Kameez with Dupatta"], ["sku_number", "CAFEB1902"], ["color", "Pink"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Double georgette kameez with ethread embroidery & printed chiffon dupatta"], ["image", "http://tiny.cc/plbsqz"], ["price", 68.0], ["category", "Casual-Wear"], ["created_at", "2020-06-13 21:00:58.005815"], ["updated_at", "2020-06-13 21:00:58.005815"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Zoya"], ["sku_number", "FAPW1805"], ["color", "Orange"], ["size_s_quantity", 0], ["size_m_quantity", 0], ["size_l_quantity", 1], ["size_xl_quantity", 0], ["description", "Burnt orange gown embrllished with inticate bead work and hand embroidery. Paired with dupatta and trousers."], ["image", "https://scontent.fhou1-2.fna.fbcdn.net/v/t1.0-0/p206x206/97820923_1039838696413465_4486204271087321088_n.jpg?_nc_cat=103&_nc_sid=110474&_nc_ohc=3qAa5wPwFqQAX9dxlsP&_nc_ht=scontent.fhou1-2.fna&_nc_tp=6&oh=aa2689fdec56a7bc4e72af89ab6e5274&oe=5EFF79F2"], ["price", 100.0], ["category", "Evening-Wear"], ["created_at", "2020-06-13 21:00:58.015317"], ["updated_at", "2020-06-13 21:00:58.015317"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lemon Yellow Shirt with Trouser"], ["sku_number", "FAPW1805"], ["color", "Yellow"], ["size_s_quantity", 0], ["size_m_quantity", 0], ["size_l_quantity", 1], ["size_xl_quantity", 0], ["description", "Lemon yellow overlapping muslin shirt with allover hand embrodery, paired with a flayered trouser "], ["image", "http://tiny.cc/j6pnqz"], ["price", 80.0], ["category", "Luxe-Pret"], ["created_at", "2020-06-13 21:00:58.022608"], ["updated_at", "2020-06-13 21:00:58.022608"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[36mOrder Create (0.7ms)[0m  [1m[32mINSERT INTO "orders" ("user_id", "total", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 44], ["total", 35.0], ["created_at", "2020-06-13 21:00:58.041847"], ["updated_at", "2020-06-13 21:00:58.041847"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[36mOrder Create (0.7ms)[0m  [1m[32mINSERT INTO "orders" ("user_id", "total", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 45], ["total", 20.0], ["created_at", "2020-06-13 21:00:58.058637"], ["updated_at", "2020-06-13 21:00:58.058637"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mOrderItem Create (0.8ms)[0m  [1m[32mINSERT INTO "order_items" ("order_id", "item_id", "quantity", "size", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["order_id", 9], ["item_id", 19], ["quantity", 2], ["size", "L"], ["created_at", "2020-06-13 21:00:58.074987"], ["updated_at", "2020-06-13 21:00:58.074987"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mOrderItem Create (0.9ms)[0m  [1m[32mINSERT INTO "order_items" ("order_id", "item_id", "quantity", "size", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["order_id", 10], ["item_id", 18], ["quantity", 1], ["size", "L"], ["created_at", "2020-06-13 21:00:58.096610"], ["updated_at", "2020-06-13 21:00:58.096610"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReview Create (0.6ms)[0m  [1m[32mINSERT INTO "reviews" ("comment", "rating", "user_id", "item_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["comment", "Great design"], ["rating", 8], ["user_id", 45], ["item_id", 19], ["created_at", "2020-06-13 21:00:58.103683"], ["updated_at", "2020-06-13 21:00:58.103683"]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/items" for ::1 at 2020-06-13 16:01:39 -0500
+Started GET "/getuser" for ::1 at 2020-06-13 16:01:39 -0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#get_user as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Completed 404 Not Found in 21ms (ActiveRecord: 0.6ms | Allocations: 4253)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/application_controller.rb:4:in `current_user'
+app/controllers/users_controller.rb:37:in `get_user'
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (1.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:4:in `index'
+Completed 200 OK in 29ms (Views: 20.1ms | ActiveRecord: 2.3ms | Allocations: 17943)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 34]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 35]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 36]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 37]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 38]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 39]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 40]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 41]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 42]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 43]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 44]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 45]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mItem Load (1.6ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 18]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 19]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 20]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 21]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 22]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 23]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 24]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 25]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 26]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 27]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 28]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 29]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 30]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 31]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 32]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 33]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 34]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.6ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 35]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 36]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "items" WHERE "items"."id" = ?[0m  [["id", 37]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReview Destroy (0.4ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Destroy (0.4ms)[0m  [1m[31mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Destroy (0.4ms)[0m  [1m[31mDELETE FROM "orders" WHERE "orders"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mOrderItem Load (0.2ms)[0m  [1m[34mSELECT "order_items".* FROM "order_items"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrderItem Destroy (0.4ms)[0m  [1m[31mDELETE FROM "order_items" WHERE "order_items"."id" = ?[0m  [["id", 7]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrderItem Destroy (0.5ms)[0m  [1m[31mDELETE FROM "order_items" WHERE "order_items"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (2.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Melia"], ["last_name", "Leffler"], ["email", "curt@purdy.name"], ["password_digest", "$2a$12$cTncWpuhrIQoJQxjyG9rAefe9aF9bt1HOkGInwE3bMihM2fGV25PG"], ["phone_number", 184], ["address", "Apt. 764 54709 Cremin Mount, North Vernonmouth, KS 70063"], ["created_at", "2020-06-13 21:07:45.939546"], ["updated_at", "2020-06-13 21:07:45.939546"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Kit"], ["last_name", "Bechtelar"], ["email", "darcie.gusikowski@veum.io"], ["password_digest", "$2a$12$1v6KnYUWIHffMYle1zRF3u62ojUYrmZ3UsJpE.tXAiqzl5WTCTjNy"], ["phone_number", 419], ["address", "6631 Tina Branch, South Janean, NY 76216"], ["created_at", "2020-06-13 21:07:46.234501"], ["updated_at", "2020-06-13 21:07:46.234501"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Nathanael"], ["last_name", "Fahey"], ["email", "dale_gerlach@runolfsdottir.info"], ["password_digest", "$2a$12$ydoQ820tiNsmXvCCqP7FP.1XS2w2r6DX0bKv5VeN5GigfSK.jeeVi"], ["phone_number", 0], ["address", "Suite 172 60979 Tromp Circle, Port Audra, ND 65099"], ["created_at", "2020-06-13 21:07:46.571781"], ["updated_at", "2020-06-13 21:07:46.571781"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Camie"], ["last_name", "Daugherty"], ["email", "emmanuel_lemke@kunze-boyle.name"], ["password_digest", "$2a$12$nt/TtCVkx04zaDq/Qs/KdOrPX1Bi1UcwsXMvMc.UbHTeYjf4EBQtm"], ["phone_number", 0], ["address", "Apt. 402 477 Reynolds Tunnel, Lake Hulda, SC 69049-5989"], ["created_at", "2020-06-13 21:07:46.924202"], ["updated_at", "2020-06-13 21:07:46.924202"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Valentine"], ["last_name", "Considine"], ["email", "sammie@harber.info"], ["password_digest", "$2a$12$ZmsGeuX8894z9KpT2d8UHO9Em7NbPSmAA7cis.x4NlybdWA7y.1YW"], ["phone_number", 164], ["address", "6284 Noble Causeway, Lashondaburgh, TX 72759-2534"], ["created_at", "2020-06-13 21:07:47.236728"], ["updated_at", "2020-06-13 21:07:47.236728"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Angelo"], ["last_name", "Mitchell"], ["email", "talia_hane@zemlak-mckenzie.biz"], ["password_digest", "$2a$12$8V7wKjBjKg6OkHFc3wcbxOlJZWD4DprHVFVTCgf9r8yqDwX88t4c."], ["phone_number", 516], ["address", "535 Maren Inlet, East Lloydhaven, PA 07120"], ["created_at", "2020-06-13 21:07:47.508234"], ["updated_at", "2020-06-13 21:07:47.508234"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Lee"], ["last_name", "Morar"], ["email", "velva@huel.name"], ["password_digest", "$2a$12$6IQVZ4x7ofarWM3oDF0bo.rHUIdKcq3anuv65SbUs.yHWOJCuKlqC"], ["phone_number", 1], ["address", "30069 Antony Plains, East Leonel, DE 03846"], ["created_at", "2020-06-13 21:07:47.786144"], ["updated_at", "2020-06-13 21:07:47.786144"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Charlie"], ["last_name", "Gottlieb"], ["email", "chance@larkin.io"], ["password_digest", "$2a$12$BR69JEFJwLaH8IJNjlGwhOSTrB9wqXmS3gdjTSRzeff1qdNxE6S8u"], ["phone_number", 708], ["address", "1455 Thea Dale, Jedberg, WV 81360-0136"], ["created_at", "2020-06-13 21:07:48.052331"], ["updated_at", "2020-06-13 21:07:48.052331"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Katharina"], ["last_name", "Becker"], ["email", "jed@lehner.biz"], ["password_digest", "$2a$12$HQCys.MOylLJqwaEB4D4BesH5GkPFmBTttmoH9YAP7C4rtlGnoWZC"], ["phone_number", 379], ["address", "5112 Bradtke Plaza, New Jakeborough, CT 03323-8986"], ["created_at", "2020-06-13 21:07:48.315667"], ["updated_at", "2020-06-13 21:07:48.315667"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Tyrell"], ["last_name", "Grant"], ["email", "erik_herman@johnston-christiansen.name"], ["password_digest", "$2a$12$k5qi2QaftCJRNJvHCo9OLe2R10KoidFuYXbsW4XpKut6u9rEO7lKW"], ["phone_number", 0], ["address", "2921 Ferry Estate, New Jere, NH 01460-2990"], ["created_at", "2020-06-13 21:07:48.578101"], ["updated_at", "2020-06-13 21:07:48.578101"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Faizah"], ["last_name", "Ahsan"], ["email", "faizah@gmail.com"], ["password_digest", "$2a$12$ksnAwYNwTavxmilXZoOwoeCiQekyNRqLIRNdni23uLiyDpGDkazUm"], ["phone_number", 1234567890], ["address", "123 main street, houston, texas 77004"], ["created_at", "2020-06-13 21:07:48.840171"], ["updated_at", "2020-06-13 21:07:48.840171"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "phone_number", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["first_name", "Ahmed"], ["last_name", "Tahsin"], ["email", "tahsin@yahoo.com"], ["password_digest", "$2a$12$mqvg97tQ7jRZqmcARlk.KuYQV0LVPMEl8vdPQTjD.81yOawA8Tb9u"], ["phone_number", 1234567890], ["address", "123 apple street, houston, texas 77003"], ["created_at", "2020-06-13 21:07:49.104777"], ["updated_at", "2020-06-13 21:07:49.104777"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Maroon High Low Tunic"], ["sku_number", "FAFK1802"], ["color", "Maroon"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Maroon high low tunic with peard and stone work on the sleeveline"], ["image", "http://tiny.cc/w49rqz"], ["price", 45.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:07:49.111560"], ["updated_at", "2020-06-13 21:07:49.111560"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Navy kurta with bell sleeves"], ["sku_number", "KMAY1901"], ["color", "Navy"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Double georgette kurti with pipe and thread embroidery."], ["image", "http://tiny.cc/k59rqz"], ["price", 40.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:07:49.117019"], ["updated_at", "2020-06-13 21:07:49.117019"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Peachy dream"], ["sku_number", "KMAR1904"], ["color", "Peach"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Peach kurti with striped back and small embroidery on the pocket"], ["image", "http://tiny.cc/6nbsqz"], ["price", 35.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:07:49.122985"], ["updated_at", "2020-06-13 21:07:49.122985"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (1.0ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pastel Love"], ["sku_number", "KMAY1907"], ["color", "Powder blue"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Powder blue kurti with pipe work & printed muslin back a."], ["image", "http://tiny.cc/i79rqz"], ["price", 55.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:07:49.128168"], ["updated_at", "2020-06-13 21:07:49.128168"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Blush in pink"], ["sku_number", "KMAR1905"], ["color", "Pink"], ["size_s_quantity", 0], ["size_m_quantity", 1], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Powder pink musling kurti with beaded motif"], ["image", "http://tiny.cc/999rqz"], ["price", 45.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:07:49.133816"], ["updated_at", "2020-06-13 21:07:49.133816"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Magenta Kurta "], ["sku_number", "FADJFK2001"], ["color", "Pink"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Magenta double georgette kurta with embroidery and bead work"], ["image", "http://tiny.cc/v8pnqz"], ["price", 60.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:07:49.138361"], ["updated_at", "2020-06-13 21:07:49.138361"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Powder pink Kurti"], ["sku_number", "KMAY1909"], ["color", "Pink"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Powder pink kurti with muslin panel and beaded motif on the sleeves"], ["image", "http://tiny.cc/6basqz"], ["price", 50.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:07:49.144185"], ["updated_at", "2020-06-13 21:07:49.144185"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Black & white love"], ["sku_number", "KMAY1908"], ["color", "Black"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Black & white double georgette kurti with embroidery borders"], ["image", "http://tiny.cc/5easqz"], ["price", 45.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:07:49.149882"], ["updated_at", "2020-06-13 21:07:49.149882"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Spring Time"], ["sku_number", "FADJFK2004"], ["color", "Yellow"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Ywlloe kurti with musline panel and sequin work"], ["image", "http://tiny.cc/jhasqz"], ["price", 55.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:07:49.154781"], ["updated_at", "2020-06-13 21:07:49.154781"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gray Lace Kurti"], ["sku_number", "FADJFK2005"], ["color", "Gray"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Gray double gerogette kurti with lace panel and cute muslin tie neckline"], ["image", "http://tiny.cc/oiasqz"], ["price", 40.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:07:49.159516"], ["updated_at", "2020-06-13 21:07:49.159516"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Watercolor"], ["sku_number", "FADKDEC1902"], ["color", "White"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Printed cotton kurti with muslin pleats and thread emrbroidered panel."], ["image", "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/87043219_977234406007228_3616191587958128640_n.jpg?_nc_cat=107&_nc_sid=110474&_nc_ohc=NYc2JoKlJdYAX_o3vut&_nc_ht=scontent-dfw5-2.xx&oh=7de487c2633eea4802f02cddd7fede66&oe=5F0B2709"], ["price", 40.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:07:49.164859"], ["updated_at", "2020-06-13 21:07:49.164859"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Knotted kurti"], ["sku_number", "FADNDK1909"], ["color", "Brown"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Double gerogette knotted kurti with emroidered sleeves"], ["image", "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/82757368_951347701929232_2369625335143596032_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=anFYmjIOtaYAX-8I4qF&_nc_ht=scontent-dfw5-1.xx&oh=173e76b7fd6e74c4f480f411ec477080&oe=5F09E235"], ["price", 40.0], ["category", "Kurtis"], ["created_at", "2020-06-13 21:07:49.170716"], ["updated_at", "2020-06-13 21:07:49.170716"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Black & Mint Kameez with Dupatta"], ["sku_number", "CAMAR1906"], ["color", "Black"], ["size_s_quantity", 1], ["size_m_quantity", 2], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Double georgette kameez with embroidered border & tiedyed dupatta"], ["image", "http://tiny.cc/obbsqz"], ["price", 70.0], ["category", "Casual-Wear"], ["created_at", "2020-06-13 21:07:49.176212"], ["updated_at", "2020-06-13 21:07:49.176212"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Beige kameez with dupatta"], ["sku_number", "CAMAR1908"], ["color", "Beige"], ["size_s_quantity", 1], ["size_m_quantity", 2], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Double georgette kameez with intricate embroidery"], ["image", "http://tiny.cc/1bbsqz"], ["price", 70.0], ["category", "Casual-Wear"], ["created_at", "2020-06-13 21:07:49.182312"], ["updated_at", "2020-06-13 21:07:49.182312"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Peach Kameez with Dupatta"], ["sku_number", "CAMAR1906"], ["color", "Peach"], ["size_s_quantity", 1], ["size_m_quantity", 2], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Linen kameez with all over embroidery"], ["image", "http://tiny.cc/3dbsqz"], ["price", 65.0], ["category", "Casual-Wear"], ["created_at", "2020-06-13 21:07:49.186951"], ["updated_at", "2020-06-13 21:07:49.186951"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cream kameez with dupatta"], ["sku_number", "FAFCA1805"], ["color", "Cream"], ["size_s_quantity", 1], ["size_m_quantity", 2], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Cashmilan kameez with embroidered motif"], ["image", "http://tiny.cc/cebsqz"], ["price", 75.0], ["category", "Casual-Wear"], ["created_at", "2020-06-13 21:07:49.191771"], ["updated_at", "2020-06-13 21:07:49.191771"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Parrot green Kameez with Dupatta"], ["sku_number", "CAJUL1903"], ["color", "Green"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Cashmilan kameez with floral motif thread embroidery"], ["image", "http://tiny.cc/cgbsqz"], ["price", 70.0], ["category", "Casual-Wear"], ["created_at", "2020-06-13 21:07:49.196326"], ["updated_at", "2020-06-13 21:07:49.196326"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Off white Kameez with dupatta"], ["sku_number", "CAJUL1901"], ["color", "Off white"], ["size_s_quantity", 1], ["size_m_quantity", 0], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "double georgette kameez with thread embroidery"], ["image", "http://tiny.cc/mhbsqz"], ["price", 70.0], ["category", "Casual-Wear"], ["created_at", "2020-06-13 21:07:49.201055"], ["updated_at", "2020-06-13 21:07:49.201055"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mint Kameez with Dupatta"], ["sku_number", "CAFEB1901"], ["color", "Mint"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 1], ["size_xl_quantity", 1], ["description", "Double georgette kameez with thread embroidered"], ["image", "http://tiny.cc/bjbsqz"], ["price", 75.0], ["category", "Casual-Wear"], ["created_at", "2020-06-13 21:07:49.206013"], ["updated_at", "2020-06-13 21:07:49.206013"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.6ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Onion Pink Kameez with Dupatta"], ["sku_number", "CAFEB1902"], ["color", "Pink"], ["size_s_quantity", 1], ["size_m_quantity", 1], ["size_l_quantity", 0], ["size_xl_quantity", 1], ["description", "Double georgette kameez with ethread embroidery & printed chiffon dupatta"], ["image", "http://tiny.cc/plbsqz"], ["price", 68.0], ["category", "Casual-Wear"], ["created_at", "2020-06-13 21:07:49.211252"], ["updated_at", "2020-06-13 21:07:49.211252"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.8ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Zoya"], ["sku_number", "FAPW1805"], ["color", "Orange"], ["size_s_quantity", 0], ["size_m_quantity", 0], ["size_l_quantity", 1], ["size_xl_quantity", 0], ["description", "Burnt orange gown embrllished with inticate bead work and hand embroidery. Paired with dupatta and trousers."], ["image", "https://scontent.fhou1-2.fna.fbcdn.net/v/t1.0-0/p206x206/97820923_1039838696413465_4486204271087321088_n.jpg?_nc_cat=103&_nc_sid=110474&_nc_ohc=3qAa5wPwFqQAX9dxlsP&_nc_ht=scontent.fhou1-2.fna&_nc_tp=6&oh=aa2689fdec56a7bc4e72af89ab6e5274&oe=5EFF79F2"], ["price", 100.0], ["category", "Evening-Wear"], ["created_at", "2020-06-13 21:07:49.216117"], ["updated_at", "2020-06-13 21:07:49.216117"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.5ms)[0m  [1m[32mINSERT INTO "items" ("name", "sku_number", "color", "size_s_quantity", "size_m_quantity", "size_l_quantity", "size_xl_quantity", "description", "image", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lemon Yellow Shirt with Trouser"], ["sku_number", "FAPW1805"], ["color", "Yellow"], ["size_s_quantity", 0], ["size_m_quantity", 0], ["size_l_quantity", 1], ["size_xl_quantity", 0], ["description", "Lemon yellow overlapping muslin shirt with allover hand embrodery, paired with a flayered trouser "], ["image", "http://tiny.cc/j6pnqz"], ["price", 80.0], ["category", "Luxe-Pret"], ["created_at", "2020-06-13 21:07:49.222292"], ["updated_at", "2020-06-13 21:07:49.222292"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 56], ["LIMIT", 1]]
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("user_id", "total", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 56], ["total", 35.0], ["created_at", "2020-06-13 21:07:49.235584"], ["updated_at", "2020-06-13 21:07:49.235584"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 57], ["LIMIT", 1]]
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "orders" ("user_id", "total", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 57], ["total", 20.0], ["created_at", "2020-06-13 21:07:49.242464"], ["updated_at", "2020-06-13 21:07:49.242464"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[36mOrderItem Create (0.5ms)[0m  [1m[32mINSERT INTO "order_items" ("order_id", "item_id", "quantity", "size", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["order_id", 11], ["item_id", 39], ["quantity", 2], ["size", "L"], ["created_at", "2020-06-13 21:07:49.252304"], ["updated_at", "2020-06-13 21:07:49.252304"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  [1m[36mOrderItem Create (0.5ms)[0m  [1m[32mINSERT INTO "order_items" ("order_id", "item_id", "quantity", "size", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["order_id", 12], ["item_id", 38], ["quantity", 1], ["size", "L"], ["created_at", "2020-06-13 21:07:49.259654"], ["updated_at", "2020-06-13 21:07:49.259654"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReview Create (0.5ms)[0m  [1m[32mINSERT INTO "reviews" ("comment", "rating", "user_id", "item_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["comment", "Great design"], ["rating", 8], ["user_id", 57], ["item_id", 39], ["created_at", "2020-06-13 21:07:49.263568"], ["updated_at", "2020-06-13 21:07:49.263568"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/getuser" for ::1 at 2020-06-13 16:08:16 -0500
+Started GET "/items" for ::1 at 2020-06-13 16:08:16 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#get_user as */*
+Processing by ItemsController#index as */*
+Completed 404 Not Found in 17ms (ActiveRecord: 0.7ms | Allocations: 4138)
+
+
+  [1m[36mItem Load (1.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/application_controller.rb:4:in `current_user'
+app/controllers/users_controller.rb:37:in `get_user'
+  ↳ app/controllers/items_controller.rb:4:in `index'
+Completed 200 OK in 75ms (Views: 69.2ms | ActiveRecord: 2.3ms | Allocations: 52516)
+
+
+Started GET "/items/39" for ::1 at 2020-06-13 16:08:36 -0500
+Processing by ItemsController#show as */*
+  Parameters: {"id"=>"39"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:8:in `show'
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.3ms | Allocations: 1037)
+
+
+Started GET "/items" for ::1 at 2020-06-13 16:14:57 -0500
+Started GET "/getuser" for ::1 at 2020-06-13 16:14:57 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#index as */*
+Processing by UsersController#get_user as */*
+  [1m[36mItem Load (1.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+Completed 404 Not Found in 4ms (ActiveRecord: 0.0ms | Allocations: 319)
+
+
+  ↳ app/controllers/items_controller.rb:4:in `index'
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/application_controller.rb:4:in `current_user'
+app/controllers/users_controller.rb:37:in `get_user'
+Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 1.2ms | Allocations: 7074)
+
+
+Started GET "/items" for ::1 at 2020-06-13 16:15:33 -0500
+Processing by ItemsController#index as */*
+Started GET "/getuser" for ::1 at 2020-06-13 16:15:33 -0500
+Processing by UsersController#get_user as */*
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 311)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/application_controller.rb:4:in `current_user'
+app/controllers/users_controller.rb:37:in `get_user'
+  ↳ app/controllers/items_controller.rb:4:in `index'
+Completed 200 OK in 74ms (Views: 69.6ms | ActiveRecord: 0.3ms | Allocations: 41357)
+
+
+Started GET "/getuser" for ::1 at 2020-06-13 16:19:45 -0500
+Started GET "/items" for ::1 at 2020-06-13 16:19:45 -0500
+Processing by UsersController#get_user as */*
+Processing by ItemsController#index as */*
+Completed 404 Not Found in 12ms (ActiveRecord: 0.0ms | Allocations: 311)
+
+
+  [1m[36mItem Load (1.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/application_controller.rb:4:in `current_user'
+app/controllers/users_controller.rb:37:in `get_user'
+  ↳ app/controllers/items_controller.rb:4:in `index'
+Completed 200 OK in 120ms (Views: 118.0ms | ActiveRecord: 1.4ms | Allocations: 40309)
+
+
+Started GET "/items/38" for ::1 at 2020-06-13 21:34:19 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#show as */*
+  Parameters: {"id"=>"38"}
+  [1m[36mItem Load (1.0ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:8:in `show'
+Completed 200 OK in 14ms (Views: 5.2ms | ActiveRecord: 1.0ms | Allocations: 863)
+
+
+Started GET "/items/53" for ::1 at 2020-06-13 21:34:27 -0500
+Processing by ItemsController#show as */*
+  Parameters: {"id"=>"53"}
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:8:in `show'
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 0.5ms | Allocations: 831)
+
+
+Started GET "/items/50" for ::1 at 2020-06-13 21:34:32 -0500
+Processing by ItemsController#show as */*
+  Parameters: {"id"=>"50"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:8:in `show'
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 841)
+
+
+Started GET "/items/39" for ::1 at 2020-06-13 21:40:14 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#show as */*
+  Parameters: {"id"=>"39"}
+  [1m[36mItem Load (2.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:8:in `show'
+Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 2.4ms | Allocations: 866)
+
+
+Started GET "/getuser" for ::1 at 2020-06-13 21:40:27 -0500
+Started GET "/items" for ::1 at 2020-06-13 21:40:27 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#get_user as */*
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (1.2ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:4:in `index'
+Completed 404 Not Found in 13ms (ActiveRecord: 0.0ms | Allocations: 874)
+
+
+Completed 200 OK in 66ms (Views: 64.4ms | ActiveRecord: 1.2ms | Allocations: 6538)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/application_controller.rb:4:in `current_user'
+app/controllers/users_controller.rb:37:in `get_user'

@@ -19,6 +19,12 @@ const userReducer = (state , action) => {
         errorMessage: action.errorMessage
       }
       break
+    case "FAIL_SIGNUP":
+      return{
+        ...state,
+        errorMessage: action.errorMessage
+        }
+      break
 
 
     case "LOG_OUT":
@@ -29,7 +35,7 @@ const userReducer = (state , action) => {
     case "SIGNUP":
       return{
         ...state,
-        message: action.errorMessage
+        message: action.message
       }
   }
   return state;
