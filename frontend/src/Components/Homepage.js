@@ -3,16 +3,20 @@ import { useHistory } from "react-router";
 import { Link } from "react-router-dom";
 import "../App.css";
 import "../homePage.css";
-import { Panel, Grid, Row, Col, Icon} from "rsuite";
+import { Panel, Grid, Row, Col, Icon,FlexboxGrid } from "rsuite";
 import { Divider } from "rsuite";
 import HomeCard from "./homeCard";
-// import { Carousel } from 'rsuite';
+import { Carousel } from "rsuite";
 // import Carousel from 'react-bootstrap/Carousel
-import Carousel from 'nuka-carousel';
+// import Carousel from 'nuka-carousel';
 import { Button, Jumbotron, Container, Card } from "react-bootstrap";
 
 export default function Homepage(props) {
   let history = useHistory();
+  let carouselOne = require("../images/carousel_1.png");
+  let carouselTwo = require("../images/carousel_2.png");
+  let carouselThree = require("../images/carousel_3.png");
+  let carouselFour = require("../images/carousel_4.png");
   return (
     <div>
       <div className="container">
@@ -32,12 +36,35 @@ export default function Homepage(props) {
             <br />
           </p>
         </Jumbotron>
-      </div> 
-        <Carousel  className="custom-slider" >
-          <img src="https://cutt.ly/nuhF4mz" height="700" />
-          <img src="https://cutt.ly/DuhGbJU" height="700" />
-          <img src="https://cutt.ly/xuhHi5X" height="700" />
-        </Carousel> 
+      </div>
+      <div className="show-grid">
+        <FlexboxGrid>
+          <FlexboxGrid.Item colspan={12} >
+          <Carousel autoplay className="custom-slider" style={{width: "100%"}}>
+        <img src={carouselTwo} height="250"  />
+        <img src={carouselOne} height="250" />
+        <img src={carouselThree} height="250" />
+        <img src={carouselFour} height="250" />
+      </Carousel>
+          </FlexboxGrid.Item>
+          <FlexboxGrid.Item colspan={12} >
+            <div>
+            <img src="img_snowtops.jpg" class="w3-border" alt="Norway" style="padding:16px;width:50%"/>
+            </div>
+ 
+          </FlexboxGrid.Item>          
+        </FlexboxGrid>
+        <div style={{ display:"inline"}}>
+          {/* "hello" */}
+        </div>
+      </div>
+      {/* <Carousel autoplay className="custom-slider">
+        <img src={carouselTwo} height="250" />
+        <img src={carouselOne} height="250" />
+        <img src={carouselThree} height="250" />
+        <img src={carouselFour} height="250" />
+      </Carousel> */}
+
       <Divider />
 
       <h3>SHOP NOW</h3>

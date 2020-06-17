@@ -74,13 +74,7 @@
   margin-top: -4%;
   margin-left: 16%
 }
-.custom-slider{
-  width: 1000px; 
-  float:middle;
-  position: relative;
-  margin: auto;
-  /* transform: rotate(90deg); */
-}
+
 .custom-slider-details{
   float:middle;
   position: relative;
