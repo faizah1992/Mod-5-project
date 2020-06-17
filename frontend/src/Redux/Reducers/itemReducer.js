@@ -36,7 +36,26 @@ const itemsReducer = (state ,action) =>{
         return{
           ...state, cartItems: action.cartItems
         }
+        break
 
+      case "ADD_ORDER":
+        // let orderitem = {item: state.cartItems.find(cartitem => cartitem.id == action.cartItems.item_id)}
+        return{
+          ...state, orders:[...state.orders,{...action.orders}]
+        }
+      break
+
+      case "CLEAR_CART":
+       
+        return{
+          ...state, cartItems: []
+        }
+        break
+
+      case "CURRENT_USER_ORDER":
+        
+          return{...state, orders: action.orders}
+      break
      
     }
     return state;

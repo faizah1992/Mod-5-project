@@ -22,17 +22,7 @@ end
     def update  
        
         cart_item = CartItem.find(params[:id])
-        
-        # updated_cart_params = {
-            
-        #     cart_id: self.current_user.cart.id,
-        #     item_id: cart_item.item_id,
-        #     quantity: params[:quantity],
-        #     size: cart_item.size
-           
-        # }
-      
-         cart_item.update({
+        cart_item.update({
             quantity: params[:quantity]
         })
       

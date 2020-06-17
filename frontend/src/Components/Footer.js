@@ -13,12 +13,12 @@ export default function Footer(props) {
     return(
         <div class="footer">
             
-            <a href ="https://www.instagram.com/faizahahsandesignsofficial"><IoLogoInstagram color= "white" size="2%" className="fb"/></a>
-            <a href = "https://www.facebook.com/FaizahAhsanDesigns/"><GrFacebookOption color= "white" size="2%"className="insta"/></a>
+            Follow us: <a href ="https://www.instagram.com/faizahahsandesignsofficial"><IoLogoInstagram color= "white" size="2%" className="fb"/></a>
+            <a href ="https://www.facebook.com/FaizahAhsanDesigns/"><GrFacebookOption color= "white" size="2%"className="insta"/></a>
             <Divider />
             <Nav >
             <Nav.Item  appearance= 'subtle'className= "about" onClick={()=>history.push('/about')}>About Us</Nav.Item>
-            <Nav.Item className="contact">Contact Us</Nav.Item>
+            <Nav.Item className="contact" onClick={()=>history.push('/contact-us')}>Contact Us</Nav.Item>
             <Nav.Item className="refund" onClick={()=>history.push('/return-refund-policy')}>Return and Refund Policy</Nav.Item>
             </Nav>
             <Icon  className= "visa" icon='cc-visa' size="2x" />

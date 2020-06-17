@@ -1,40 +1,173 @@
-import React, { Component } from 'react';
-import { useHistory } from 'react-router';
-import { Input, Menu, Segment} from 'semantic-ui-react'
-import {Link} from 'react-router-dom'
-import '../App.css'
-import { Navbar, Nav, Container, Header, Dropdown, Icon} from 'rsuite';
-import {Divider} from 'rsuite'
-import { Carousel } from 'rsuite';
+import React, { Component } from "react";
+import { useHistory } from "react-router";
+import { Link } from "react-router-dom";
+import "../App.css";
+import "../homePage.css";
+import { Panel, Grid, Row, Col, Icon} from "rsuite";
+import { Divider } from "rsuite";
+import HomeCard from "./homeCard";
+// import { Carousel } from 'rsuite';
+// import Carousel from 'react-bootstrap/Carousel
+import Carousel from 'nuka-carousel';
+import { Button, Jumbotron, Container, Card } from "react-bootstrap";
 
-export default  function Homepage(props){
-    let history = useHistory()
-    return(
-        <div>
+export default function Homepage(props) {
+  let history = useHistory();
+  return (
+    <div>
+      <div className="container">
+        <Jumbotron>
+          <h1>New Arrivals!</h1>
+          <p>
+            Breathtaking designs crafted to perfection with magical finesse.
+            <br />
+            <br />
+            <Button
+              variant="primary"
+              onClick={() => history.push("/newarrivals")}
+            >
+              Explore
+            </Button>
+            <br />
+            <br />
+          </p>
+        </Jumbotron>
+      </div> 
+        <Carousel  className="custom-slider" >
+          <img src="https://cutt.ly/nuhF4mz" height="700" />
+          <img src="https://cutt.ly/DuhGbJU" height="700" />
+          <img src="https://cutt.ly/xuhHi5X" height="700" />
+        </Carousel> 
+      <Divider />
 
-         <Carousel  className="custom-slider">
-            <img
-            src="https://scontent.fhou1-2.fna.fbcdn.net/v/t1.0-9/38744327_606137156450290_6359245603431514112_n.jpg?_nc_cat=108&_nc_sid=110474&_nc_ohc=H6r5c7ZAPR4AX_gwXOg&_nc_ht=scontent.fhou1-2.fna&oh=4e4bca09c36741ac5f5a417f3c480a78&oe=5EFFD992"
-            height="250"
-            width= '250'
-            />
-            <img
-             src="https://scontent.fhou1-2.fna.fbcdn.net/v/t1.0-9/86831362_2852622831465067_4634450809680035840_o.jpg?_nc_cat=109&_nc_sid=2d5d41&_nc_ohc=SePlMDtA6OkAX_EoKKd&_nc_ht=scontent.fhou1-2.fna&oh=c3b68ecb110839f45e7adca37627401d&oe=5EFF06D1"
-            height="250"
-            width= '250'
-            />
-            <img
-            src="https://via.placeholder.com/600x250/8f8e94/FFFFFF?text=3"
-            height="250"
-            width= '250'
-            />
-           
-         </Carousel> 
+      <h3>SHOP NOW</h3>
 
-         <Divider/>
-         {/* <Panel bordered>
+      <Panel shaded bordered className="shopnow">
+        <div class="row">
+          <div class="column">
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src="https://cutt.ly/5uhZAoB" />
+              <Card.Body>
+                <Card.Title>
+                  <h6>Shop Kurtis </h6>
+                </Card.Title>
+                <Card.Text>
+                  Shop some our best selling kurtis for your everyday wear!
+                </Card.Text>
+                <Button
+                  variant="primary"
+                  onClick={() => history.push("/kurtis")}
+                >
+                  Shop Now!
+                </Button>
+              </Card.Body>
+            </Card>
+          </div>
 
-         </Panel> */}
-         </div> 
-    )
+          <div class="column">
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src="https://cutt.ly/IuhCcoW" />
+              <Card.Body>
+                <Card.Title>
+                  <h6>Shop Casual-Wear </h6>
+                </Card.Title>
+                <Card.Text>
+                  Shop our Casual wears for the comfort and style!
+                </Card.Text>
+                <Button
+                  variant="primary"
+                  onClick={() => history.push("/casual-wear")}
+                >
+                  Shop Now!
+                </Button>
+              </Card.Body>
+            </Card>
+          </div>
+
+          <div class="column">
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src="https://cutt.ly/quhCita" />
+              <Card.Body>
+                <Card.Title>
+                  <h6>Shop Luxe-Pret</h6>
+                </Card.Title>
+                <Card.Text>
+                  Shop our luxe-pret line for the most unique style and designs!
+                </Card.Text>
+                <Button
+                  variant="primary"
+                  onClick={() => history.push("/luxe-pret")}
+                >
+                  Shop Now!
+                </Button>
+              </Card.Body>
+            </Card>
+          </div>
+
+          <div class="column">
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src="https://cutt.ly/2uhCIVC" />
+              <Card.Body>
+                <Card.Title>
+                  <h6>Shop Evening-Wear</h6>
+                </Card.Title>
+                <Card.Text>
+                  Shop our Evening-wears to stand out in every party!
+                </Card.Text>
+                <Button
+                  variant="primary"
+                  onClick={() => history.push("/evening-wear")}
+                >
+                  Shop Now!
+                </Button>
+              </Card.Body>
+            </Card>
+          </div>
+          <Divider />
+        </div>
+      </Panel>
+
+      <Panel bordered>
+        <Grid fluid>
+          <Row className="show-grid">
+            <Col xs={24} sm={20} md={8}>
+              <Icon icon="truck" size="2x" />
+              <br />
+              <br />
+              <h5>Free Shipping on all orders!</h5>
+              <p>
+                Get Free Shipping on all orders in Bangladesh! Items are
+                dispatched within Bangladesh (outside Dhaka city) will arrive in
+                15-20 days. International dispatch will arrive in 20-30 days
+                (The shipping and handling cost depends on the delivery address
+                of your order, regular DHL or FedEx rate shall be applicable)
+              </p>
+            </Col>
+            <Col xs={24} sm={20} md={8}>
+              <Icon icon="credit-card" size="2x" />
+              <br />
+              <br />
+              <h5>Safe and Secure Payments!</h5>
+              <p>
+                Safe and Secure Payments: Whether you pay at the time of
+                in-store pickup, or via our multiple digital payment methods,
+                your privacy and security is of utmost importance to us.
+              </p>
+            </Col>
+            <Col xs={24} sm={20} md={8}>
+              <Icon icon="money" size="2x" />
+              <br />
+              <br />
+              <h5>No Extra Charges!</h5>
+              <p>
+                We pay these fees so you don’t have to! The total billed at
+                checkout is the final amount you pay with no additional charges
+                at the time of delivery!
+              </p>
+            </Col>
+          </Row>
+        </Grid>
+      </Panel>
+    </div>
+  );
 }

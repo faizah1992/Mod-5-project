@@ -23,67 +23,67 @@ tahsin = User.create({first_name: "Ahmed", last_name: "Tahsin", email: "tahsin@y
 
 # Kurtis
 item1 = Item.create({
-    name: "Soothing Summer",
-    sku_number: "FADEDK2004",
-    color: "Peach",
-    size_s_quantity: 0,
+    name: "Maroon High Low Tunic",
+    sku_number: "FAFK1802",
+    color: "Maroon",
+    size_s_quantity: 1,
     size_m_quantity:1,
     size_l_quantity: 1,
-    size_xl_quantity: 0,
-    description: "Peach casmilan kurti with lace and thread embroidery.",
-    image: "http://tiny.cc/cfqnqz",
-    price: 20,
+    size_xl_quantity: 1,
+    description: "Maroon high low tunic with peard and stone work on the sleeveline",
+    image: "http://tiny.cc/w49rqz",
+    price: 45,
     category:"Kurtis"
 })
 item2 = Item.create({
-    name: "Minty Affair",
-    sku_number: "FADPBK2003",
-    color: "Mint",
-    size_s_quantity: 0,
-    size_m_quantity: 0,
+    name: "Navy kurta with bell sleeves",
+    sku_number: "KMAY1901",
+    color: "Navy",
+    size_s_quantity: 1,
+    size_m_quantity: 1,
     size_l_quantity: 1,
-    size_xl_quantity: 0,
+    size_xl_quantity: 1,
     description: "Double georgette kurti with pipe and thread embroidery.",
-    image: "https://scontent.fhou1-1.fna.fbcdn.net/v/t1.0-9/96535169_1035605730170095_600926135856922624_n.jpg?_nc_cat=111&_nc_sid=110474&_nc_ohc=poLT-l-vFqkAX_Ap8fU&_nc_ht=scontent.fhou1-1.fna&oh=99ac50a9e194081246e3d91b813e7356&oe=5EFD11A4",
-    price: 35,
+    image: "http://tiny.cc/k59rqz",
+    price: 40,
     category: "Kurtis"
 })
 item3 = Item.create({
-    name: "Watercolor",
-    sku_number: "FADKDEC1902",
-    color: "White",
-    size_s_quantity: 0,
+    name: "Peachy dream",
+    sku_number: "KMAR1904",
+    color: "Peach",
+    size_s_quantity: 1,
     size_m_quantity:1,
     size_l_quantity: 0,
     size_xl_quantity: 1,
-    description: "White printed kurti with embroidery on the bottom panel.",
-    image: "http://tiny.cc/neqnqz",
-    price: 45,
+    description: "Peach kurti with striped back and small embroidery on the pocket",
+    image: "http://tiny.cc/6nbsqz",
+    price: 35,
     category:"Kurtis"
 })
 item4 = Item.create({
-    name: "It's Spring time",
-    sku_number: "FADJFK2002",
-    color: "Yellow",
-    size_s_quantity: 0,
+    name: "Pastel Love",
+    sku_number: "KMAY1907",
+    color: "Powder blue",
+    size_s_quantity: 1,
     size_m_quantity:1,
     size_l_quantity: 0,
     size_xl_quantity: 1,
-    description: "Yellow double georgette kurti with muslin sleeves with thread embroidery.",
-    image: "http://tiny.cc/gdqnqz",
-    price: 45,
+    description: "Powder blue kurti with pipe work & printed muslin back a.",
+    image: "http://tiny.cc/i79rqz",
+    price: 55,
     category:"Kurtis"
 })
 item5 = Item.create({
     name: "Blush in pink",
-    sku_number: "FADJFK2003",
+    sku_number: "KMAR1905",
     color: "Pink",
     size_s_quantity: 0,
     size_m_quantity:1,
     size_l_quantity: 0,
     size_xl_quantity: 1,
     description: "Powder pink musling kurti with beaded motif",
-    image: "http://tiny.cc/abqnqz",
+    image: "http://tiny.cc/999rqz",
     price: 45,
     category:"Kurtis"
 })
@@ -97,69 +97,497 @@ item6 = Item.create({
     size_xl_quantity: 1,
     description: "Magenta double georgette kurta with embroidery and bead work",
     image: "http://tiny.cc/v8pnqz",
+    price: 60,
+    category:"Kurtis"
+})
+item7 = Item.create({
+    name: "Powder pink Kurti",
+    sku_number: "KMAY1909",
+    color: "Pink",
+    size_s_quantity: 1,
+    size_m_quantity:1,
+    size_l_quantity: 1,
+    size_xl_quantity: 1,
+    description: "Powder pink kurti with muslin panel and beaded motif on the sleeves",
+    image: "http://tiny.cc/6basqz",
+    price: 50,
+    category:"Kurtis"
+})
+item8 = Item.create({
+    name: "Black & white love",
+    sku_number: "KMAY1908",
+    color: "Black",
+    size_s_quantity: 1,
+    size_m_quantity:1,
+    size_l_quantity: 1,
+    size_xl_quantity: 1,
+    description: "Black & white double georgette kurti with embroidery borders",
+    image: "http://tiny.cc/5easqz",
     price: 45,
+    category:"Kurtis"
+})
+item9 = Item.create({
+    name: "Spring Time",
+    sku_number: "FADJFK2004",
+    color: "Yellow",
+    size_s_quantity: 1,
+    size_m_quantity:1,
+    size_l_quantity: 1,
+    size_xl_quantity: 1,
+    description: "Ywlloe kurti with musline panel and sequin work",
+    image: "http://tiny.cc/jhasqz",
+    price: 55,
+    category:"Kurtis"
+})
+item10 = Item.create({
+    name: "Gray Lace Kurti",
+    sku_number: "FADJFK2005",
+    color: "Gray",
+    size_s_quantity: 1,
+    size_m_quantity:1,
+    size_l_quantity: 1,
+    size_xl_quantity: 1,
+    description: "Gray double gerogette kurti with lace panel and cute muslin tie neckline",
+    image: "http://tiny.cc/oiasqz",
+    price: 40,
+    category:"Kurtis"
+})
+item11 = Item.create({
+    name: "Watercolor",
+    sku_number: "FADKDEC1902",
+    color: "White",
+    size_s_quantity: 1,
+    size_m_quantity:1,
+    size_l_quantity: 1,
+    size_xl_quantity: 1,
+    description: "Printed cotton kurti with muslin pleats and thread emrbroidered panel.",
+    image: "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/87043219_977234406007228_3616191587958128640_n.jpg?_nc_cat=107&_nc_sid=110474&_nc_ohc=NYc2JoKlJdYAX_o3vut&_nc_ht=scontent-dfw5-2.xx&oh=7de487c2633eea4802f02cddd7fede66&oe=5F0B2709",
+    price: 40,
+    category:"Kurtis"
+})
+item12 = Item.create({
+    name: "Knotted kurti",
+    sku_number: "FADNDK1909",
+    color: "Brown",
+    size_s_quantity: 1,
+    size_m_quantity:1,
+    size_l_quantity: 1,
+    size_xl_quantity: 1,
+    description: "Double gerogette knotted kurti with emroidered sleeves",
+    image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/82757368_951347701929232_2369625335143596032_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=anFYmjIOtaYAX-8I4qF&_nc_ht=scontent-dfw5-1.xx&oh=173e76b7fd6e74c4f480f411ec477080&oe=5F09E235",
+    price: 40,
     category:"Kurtis"
 })
 
 # Casuals
 item11 = Item.create({
-    name: "Parrot",
-    sku_number: "CAJUL1903",
-    color: "Green",
-    size_s_quantity: 0,
-    size_m_quantity:0,
+    name: "Black & Mint Kameez with Dupatta",
+    sku_number: "CAMAR1906",
+    color: "Black",
+    size_s_quantity: 1,
+    size_m_quantity:2,
     size_l_quantity: 0,
     size_xl_quantity: 1,
-    description: "Parrot green cashmilan kurta embellished with hand embroideryed floral motifs & delicate laces. Paired with a pure chiffon dupatta and trouser",
-    image: "https://scontent.fhou1-2.fna.fbcdn.net/v/t1.0-9/97510759_1039838589746809_5663560493181173760_n.jpg?_nc_cat=109&_nc_sid=110474&_nc_ohc=Un-3EXyiYCAAX_TSx75&_nc_ht=scontent.fhou1-2.fna&oh=c7ed20a7fb887d3b501e337de3797e90&oe=5EFCB92A",
+    description: "Double georgette kameez with embroidered border & tiedyed dupatta",
+    image: "http://tiny.cc/obbsqz",
     price: 70,
     category:"Casual-Wear"
 })
-
-
-# Evening-wear
-item21 = Item.create({
-    name: "Zoya",
-    sku_number: "FAPW1805",
-    color: "Orange",
-    size_s_quantity: 0,
+item12 = Item.create({
+    name: "Beige kameez with dupatta",
+    sku_number: "CAMAR1908",
+    color: "Beige",
+    size_s_quantity: 1,
+    size_m_quantity:2,
+    size_l_quantity: 0,
+    size_xl_quantity: 1,
+    description: "Double georgette kameez with intricate embroidery",
+    image: "http://tiny.cc/1bbsqz",
+    price: 70,
+    category:"Casual-Wear"
+})
+item13 = Item.create({
+    name: "Peach Kameez with Dupatta",
+    sku_number: "CAMAR1906",
+    color: "Peach",
+    size_s_quantity: 1,
+    size_m_quantity:2,
+    size_l_quantity: 0,
+    size_xl_quantity: 1,
+    description: "Linen kameez with all over embroidery",
+    image: "http://tiny.cc/3dbsqz",
+    price: 65,
+    category:"Casual-Wear"
+})
+item14 = Item.create({
+    name: "Cream kameez with dupatta",
+    sku_number: "FAFCA1805",
+    color: "Cream",
+    size_s_quantity: 1,
+    size_m_quantity:2,
+    size_l_quantity: 0,
+    size_xl_quantity: 1,
+    description: "Cashmilan kameez with embroidered motif",
+    image: "http://tiny.cc/cebsqz",
+    price: 75,
+    category:"Casual-Wear"
+})
+item15 = Item.create({
+    name: "Parrot green Kameez with Dupatta",
+    sku_number: "CAJUL1903",
+    color: "Green",
+    size_s_quantity: 1,
+    size_m_quantity:1,
+    size_l_quantity: 0,
+    size_xl_quantity: 1,
+    description: "Cashmilan kameez with floral motif thread embroidery",
+    image: "http://tiny.cc/cgbsqz",
+    price: 70,
+    category:"Casual-Wear"
+})
+item16 = Item.create({
+    name: "Off white Kameez with dupatta",
+    sku_number: "CAJUL1901",
+    color: "Off white",
+    size_s_quantity: 1,
     size_m_quantity:0,
+    size_l_quantity: 0,
+    size_xl_quantity: 1,
+    description: "double georgette kameez with thread embroidery",
+    image: "http://tiny.cc/mhbsqz",
+    price: 70,
+    category:"Casual-Wear"
+})
+item17 = Item.create({
+    name: "Mint Kameez with Dupatta",
+    sku_number: "CAFEB1901",
+    color: "Mint",
+    size_s_quantity: 1,
+    size_m_quantity:1,
     size_l_quantity: 1,
-    size_xl_quantity: 0,
-    description: "Burnt orange gown embrllished with inticate bead work and hand embroidery. Paired with dupatta and trousers.",
-    image: "https://scontent.fhou1-2.fna.fbcdn.net/v/t1.0-0/p206x206/97820923_1039838696413465_4486204271087321088_n.jpg?_nc_cat=103&_nc_sid=110474&_nc_ohc=3qAa5wPwFqQAX9dxlsP&_nc_ht=scontent.fhou1-2.fna&_nc_tp=6&oh=aa2689fdec56a7bc4e72af89ab6e5274&oe=5EFF79F2",
-    price: 100,
-    category:"Evening-Wear"
+    size_xl_quantity: 1,
+    description: "Double georgette kameez with thread embroidered",
+    image: "http://tiny.cc/bjbsqz",
+    price: 75,
+    category:"Casual-Wear"
+})
+item18 = Item.create({
+    name: "Onion Pink Kameez with Dupatta",
+    sku_number: "CAFEB1902",
+    color: "Pink",
+    size_s_quantity: 1,
+    size_m_quantity:1,
+    size_l_quantity: 0,
+    size_xl_quantity: 1,
+    description: "Double georgette kameez with ethread embroidery & printed chiffon dupatta",
+    image: "http://tiny.cc/plbsqz",
+    price: 68,
+    category:"Casual-Wear"
 })
 
-
 # Luxe-pret
-item31 = Item.create({
-    name: "Lemon Yellow Shirt with Trouser",
-    sku_number: "FAPW1805",
-    color: "Yellow",
-    size_s_quantity: 0,
+item19 = Item.create({
+    name: "Mint Shirt with Trouser",
+    sku_number: "PWJUL1904",
+    color: "Mint",
+    size_s_quantity: 1,
     size_m_quantity:0,
     size_l_quantity: 1,
     size_xl_quantity: 0,
-    description: "Lemon yellow overlapping muslin shirt with allover hand embrodery, paired with a flayered trouser ",
-    image: "http://tiny.cc/j6pnqz",
+    description: "Mint overlapping muslin shirt with allover hand embrodery, paired with a flayered trouser ",
+    image: "https://cutt.ly/kusfrQs",
     price: 80,
     category:"Luxe-Pret"
 })
-# item32 = Item.create({
-#     name: "Lemon Yellow Shirt with Trouser",
-#     sku_number: "FAPW1805",
-#     color: "Yellow",
-#     size_s_quantity: 0,
-#     size_m_quantity:0,
-#     size_l_quantity: 1,
-#     size_xl_quantity: 0,
-#     description: "Lemon yellow overlapping muslin shirt with allover hand embrodery, paired with a flayered trouser ",
-#     image: "http://tiny.cc/j6pnqz",
-#     price: 80,
-#     category:"Luxe-Pret"
-# })
+item20 = Item.create({
+    name: "Off white embroidered kameez with dupatta",
+    sku_number: "PWMAY1903",
+    color: "Off white",
+    size_s_quantity: 0,
+    size_m_quantity:2,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Off white gerogette kameez with all over thread embroidery and pipe work.",
+    image: "https://cutt.ly/eusfp8J",
+    price: 100,
+    category:"Luxe-Pret"
+})
+item21 = Item.create({
+    name: "Off white kameez with muslin dupatta",
+    sku_number: "FAPW1805",
+    color: "Off white",
+    size_s_quantity: 1,
+    size_m_quantity:1,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Off white double groegette kameez with all over worked muslin dupatta",
+    image: "https://cutt.ly/Iusf3oR",
+    price: 120,
+    category:"Luxe-Pret"
+})
+item22 = Item.create({
+    name: "Lemon Yellow kameez with dupatta",
+    sku_number: "PWMAY1906",
+    color: "Yellow",
+    size_s_quantity: 1,
+    size_m_quantity:0,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Lemon yellow embroidered kameez with muslin dupatta.",
+    image: "https://cutt.ly/rusgfZq",
+    price: 120,
+    category:"Luxe-Pret"
+})
+item23 = Item.create({
+    name: "Pastel queen",
+    sku_number: "PWJUL1906",
+    color: "Powder Pink",
+    size_s_quantity: 1,
+    size_m_quantity:0,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Powder pink muslin kameez with thread embroidery.",
+    image: "https://cutt.ly/iusgSFi",
+    price: 140,
+    category:"Luxe-Pret"
+})
+item24 = Item.create({
+    name: "Gray kameez with muslin dupatta",
+    sku_number: "PWJUL1904",
+    color: "Gray",
+    size_s_quantity: 1,
+    size_m_quantity:1,
+    size_l_quantity: 1,
+    size_xl_quantity: 1,
+    description: "Lemon yellow overlapping muslin shirt with allover hand embrodery, paired with a flayered trouser ",
+    image: "https://cutt.ly/Ousg4f4",
+    price: 100,
+    category:"Luxe-Pret"
+})
+item25 = Item.create({
+    name: "Black kameez with dupatta",
+    sku_number: "PWJUL1902",
+    color: "Black",
+    size_s_quantity: 1,
+    size_m_quantity:0,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Black kameez with intricate sequin work & chiffon dupatta",
+    image: "https://cutt.ly/bushxSj",
+    price: 100,
+    category:"Luxe-Pret"
+})
+item26 = Item.create({
+    name: "Powder pink kameexx with dupatta",
+    sku_number: "PWMAY1911",
+    color: "Powder Pink",
+    size_s_quantity: 0,
+    size_m_quantity:1,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Powder pink kameez with pipe work thread embroidery & comes with a dupatta.",
+    image: "https://cutt.ly/hushSqr",
+    price: 80,
+    category:"Luxe-Pret"
+})
+item27 = Item.create({
+    name: "Peach musline kameez",
+    sku_number: "PWMAY1905",
+    color: "Peach",
+    size_s_quantity: 1,
+    size_m_quantity:1,
+    size_l_quantity: 1,
+    size_xl_quantity: 1,
+    description: "Peach musline kameez with embroidery & dupatta",
+    image: "https://cutt.ly/Iush6VP",
+    price: 100,
+    category:"Luxe-Pret"
+})
+item28 = Item.create({
+    name: "Brown kameez with dupatta",
+    sku_number: "FAPW1805",
+    color: "Brown",
+    size_s_quantity: 1,
+    size_m_quantity:0,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Brown grorgette kameez & thread embroidered bordered dupatta",
+    image: "https://cutt.ly/Yusjhy7",
+    price: 80,
+    category:"Luxe-Pret"
+})
+item29 = Item.create({
+    name: "Off white jacket",
+    sku_number: "FADPWDEC1901",
+    color: "Off white",
+    size_s_quantity: 1,
+    size_m_quantity:1,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Off white mirror worked jacket with silk inner and pants.",
+    image: "https://cutt.ly/SusjYJA",
+    price: 110,
+    category:"Luxe-Pret"
+})
+item30 = Item.create({
+    name: "Powder pink cape",
+    sku_number: "PWMAY1906",
+    color: "Pink",
+    size_s_quantity: 0,
+    size_m_quantity:1,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Powder pink thread embroidered cape with inner & pant.",
+    image: "https://cutt.ly/HuskriP",
+    price: 80,
+    category:"Luxe-Pret"
+})
+
+# Evening-wear
+item31 = Item.create({
+    name: "Black gown",
+    sku_number: "FAFWW1806",
+    color: "Black",
+    size_s_quantity: 1,
+    size_m_quantity:0,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Black grown with zardozi work. Comes with a dupatta & pants.",
+    image: "https://cutt.ly/Ausl5Ee",
+    price: 120,
+    category:"Evening-Wear"
+})
+item32 = Item.create({
+    name: "Green Kameez with Dupatta",
+    sku_number: "FAFPR1809",
+    color: "Green",
+    size_s_quantity: 1,
+    size_m_quantity:1,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Bottle green kameez with net dupatta with zardozi work.",
+    image: "https://cutt.ly/UuszAHD",
+    price: 140,
+    category:"Evening-Wear"
+})
+item33 = Item.create({
+    name: "Burnt orange gown",
+    sku_number: "FAPW1805",
+    color: "Orange",
+    size_s_quantity: 1,
+    size_m_quantity:0,
+    size_l_quantity: 1,
+    size_xl_quantity: 1,
+    description: "Burnt orange gown with pipe & thread work",
+    image: "https://cutt.ly/Yusz3zy",
+    price: 150,
+    category:"Evening-Wear"
+})
+item34 = Item.create({
+    name: "Maroon gown with jacket",
+    sku_number: "FADPWDEC1902",
+    color: "Maroon",
+    size_s_quantity: 1,
+    size_m_quantity:0,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Maroon gown with muslin jacket with zardozi work",
+    image: "https://cutt.ly/XusxaYv",
+    price: 120,
+    category:"Evening-Wear"
+})
+item35 = Item.create({
+    name: "Powder pink kameez with dupatta",
+    sku_number: "FADEDPW2006",
+    color: "Pink",
+    size_s_quantity: 1,
+    size_m_quantity:0,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Powder pink kameex with all over zardozi & pipe work",
+    image: "https://cutt.ly/Busxn27",
+    price: 200,
+    category:"Evening-Wear"
+})
+item36 = Item.create({
+    name: "Magenta jacket",
+    sku_number: "FADEDPW2004",
+    color: "Pink",
+    size_s_quantity: 1,
+    size_m_quantity:0,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Magenta jacket with all over zardozi work",
+    image: "https://cutt.ly/kusxKkz",
+    price: 250,
+    category:"Evening-Wear"
+})
+item37 = Item.create({
+    name: "Lavender Sharara",
+    sku_number: "FADEDCA2005",
+    color: "Purple",
+    size_s_quantity: 1,
+    size_m_quantity:0,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Lavender muslin sharara with zardozi work.",
+    image: "https://cutt.ly/tusx6yg",
+    price: 200,
+    category:"Evening-Wear"
+})
+item38 = Item.create({
+    name: "Brown kameez with dupatta",
+    sku_number: "FADEDPW2002",
+    color: "Brown",
+    size_s_quantity: 1,
+    size_m_quantity:0,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Brown organza kameez with zardozi work.",
+    image: "https://cutt.ly/IuscjeC",
+    price: 180,
+    category:"Evening-Wear"
+})
+item39 = Item.create({
+    name: "Gold cape",
+    sku_number: "FADEDPW2001",
+    color: "Gold",
+    size_s_quantity: 1,
+    size_m_quantity:0,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Gold inticate pipe worked cape with silk pant and dupatta",
+    image: "https://cutt.ly/muscEmo",
+    price: 130,
+    category:"Evening-Wear"
+})
+item40 = Item.create({
+    name: "Gray kaftan",
+    sku_number: "FADEDPW2007",
+    color: "Gray",
+    size_s_quantity: 1,
+    size_m_quantity:1,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Gray all over thread & pipe embroidered kaftan, comes with a katan pant piece.",
+    image: "https://cutt.ly/6uscKd4",
+    price: 150,
+    category:"Evening-Wear"
+})
+item41 = Item.create({
+    name: "Purple Sharara",
+    sku_number: "FADNDPW1901",
+    color: "Purple",
+    size_s_quantity: 1,
+    size_m_quantity:1,
+    size_l_quantity: 1,
+    size_xl_quantity: 0,
+    description: "Purple kameez with intricate zardozi work, comes with a chiffron skirt and dupatta",
+    image: "https://cutt.ly/YusvqV2",
+    price: 300,
+    category:"Evening-Wear"
+})
+
 
 
 

@@ -1,5 +1,7 @@
+
 .App {
-  text-align: center;
+  background-color:  rgb(240, 245, 243);
+    text-align: center;
     min-height: 100vh;
     overflow: hidden;
     display: block;
@@ -47,17 +49,45 @@
   margin:0 auto;
 }
 
+/* register */
+.register{
+  background-color: white;
+}
+
+/* login */
+.login{
+  background-color: white;
+}
+
+/* HomePage */
+.carousel-item img {
+  padding-top: 10px;
+  font-weight: bold;
+  height: 450px;
+  width: 100%;
+}
 
 /* header */
 .logo{
   float:middle;
   width: 200px;
-  margin-top: -4.5%;
-  margin-left: 10%
+  margin-top: -4%;
+  margin-left: 16%
 }
 .custom-slider{
-  width: 50%; 
-  margin: auto
+  width: 1000px; 
+  float:middle;
+  position: relative;
+  margin: auto;
+  /* transform: rotate(90deg); */
+}
+.custom-slider-details{
+  float:middle;
+  position: relative;
+  width: 600px;
+  height: 2000px;
+  /* margin: auto; */
+  /* transform: rotateZ(90deg); */
 }
 .main-header{
   height: 130px;
@@ -66,7 +96,8 @@
 .search-icon{
   float:right;
   position: relative;
-  margin-left: 1.5%;
+  margin-left: 1%;
+  margin-top: -1%;
 }
 .search-bar{
   float:middle;
@@ -76,17 +107,19 @@
 .dropdown{
   position: relative;
   display: inline-block;
-  margin-right: -1%;
+  margin-right: 1%;
+  width: 7%;
   float: right;
+  margin-top: -1%;
 }
 .user-icon{
   float:right;
-  
-  margin-left:13%;
+  margin-top: 1%;
+  margin-left:10%;
   color: black;
   position: absolute;
-    right: 30px;
-    top: 10px;
+    right: 40px;
+    top: 11px;
 
 }
 .rs-dropdown-menu{
@@ -97,13 +130,55 @@
 .cart-icon{
   float:right;
   position: relative;
-  margin-left: 1.5%;
+  margin-left: -1%;
+  margin-top: -1%;
 
 }
-
 /* Profile */
+.profile{
+  background-color: white;
+}
 
 
+/* homepage */
+.custom-slider{
+  position: absolute;
+  width: 40%;
+  
+}
+.jumbotron{
+  background-image: url(https://cutt.ly/YuhmirO);
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  padding-top: 50px;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 100px;
+}
+.jumbotron h1{
+background-color: #ffffff73;
+padding: 50px;
+color: black;
+}
+.jumbotron img{
+  width: 300px;
+}
+.jumbotron p{
+  background-color: #ffffff73;
+  color: black;
+  font-size: x-large;
+}
+.thankyoujumbo{
+  background-image: url(https://cutt.ly/3ubqUPn);
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  padding-top: 50px;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 100px;
+}
 
 
 
@@ -171,6 +246,11 @@
     float:middle;
     position: relative;
 }
+.contactpage{
+  background-color: lightgray;
+}
+
+
 /* CART */
 .empty_cart{
   float:right;
@@ -192,17 +272,72 @@
   width: 1px;
   height:100%
 }
+.Container.cart-fullpage{
+  
+}
 .total-card{
   margin-left: 9vw;
-  margin-right: 5vw;
-  background-color:FloralWhite;
+  margin-right: 4vw;
+  background-color:white;
   border: 0;
-  margin-top: 6vw;
-  width: 34vw;
-  height: 38vh;
+  margin-top: 7vw;
+  width: 30vw;
+  height: 50vh;
   
 }
 .table{
 float: middle;
 position: relative;
+margin-left: 9.5vw;
+}
+.subtotal{
+  margin-left: 9.5vw;
+}
+.Breadcrumb{
+  float: left;
+ position: relative;
+}
+.checkout-button {
+  float: middle;
+  position: absolute;
+  color: antiquewhite;
+  margin-left: 9vw;
+}
+
+/* order page */
+.orderItemImage {
+ height: 500px;
+}
+.past-orders{
+background-color:white ;
+}
+
+/* items */
+.cardbackground{
+  background-color: rgb(237, 235, 236);
+  
+}
+.image-card:hover
+{
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+  
+}
+.card{
+  /* height: 50px; */
+  width: 20vh;
+}
+.cardimage{
+  width: 280px;
+  height: 350px;
+}
+.details-panel{
+}
+
+
+
+/* about */
+.center{
+  height: 400px;
 }

@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { Message, Form, FormGroup, FormControl, ControlLabel, Button, ButtonToolbar, FlexboxGrid, Panel } from 'rsuite';
+import { Message, Form, FormGroup, FormControl, ControlLabel, Button, ButtonToolbar, FlexboxGrid, Panel} from 'rsuite';
 import { useHistory } from 'react-router'
 import {useDispatch, useSelector} from 'react-redux'
+
 
 export default function Login(props){
     let errorMessage = useSelector(state => state.errorMessage)
@@ -18,10 +19,8 @@ export default function Login(props){
     }
 
 
- let handleLogin=(user, e)=>{
- 
-    e.preventDefault()
-  
+    let handleLogin=(user, e)=>{
+        e.preventDefault()
     fetch('http://localhost:3000/login', {
       credentials: 'include',
       method: "POST",
@@ -36,7 +35,8 @@ export default function Login(props){
       if (response.success){
       dispatch({type:"SAVE_USER",user:response.user}) 
       dispatch({type: "CURRENT_USER_CART", cartItems: response.cart_items })
-      history.push('/')
+      props.hideModal()
+    //   history.push('/')
       }
       else{
           dispatch({type: "FAIL_LOGIN", errorMessage: "Incorrect Email or Password"})
@@ -47,9 +47,9 @@ export default function Login(props){
 
 
     return(
-        <FlexboxGrid justify="center">
-            <FlexboxGrid.Item colspan={12}>
-                <Panel header={<h3>Login</h3>} bordered>
+        // <FlexboxGrid justify="center">
+        //     <FlexboxGrid.Item colspan={12}>
+        //         <Panel header={<h3>Login</h3>} bordered className="login">
                    
                     <Form fluid>
                         <FormGroup>
@@ -64,13 +64,40 @@ export default function Login(props){
                         </FormGroup>
                         <FormGroup>
                             <ButtonToolbar>
-                                <Button appearance="primary" onClick={e =>handleLogin( user, e)}>Sign in</Button>
+                                <Button appearance="default" color="black" onClick={e =>handleLogin( user, e)}>Sign in</Button>
                             </ButtonToolbar>
                         
                         </FormGroup>
                     </Form>
-                </Panel>
-            </FlexboxGrid.Item>
-        </FlexboxGrid>
+        //         </Panel>
+        //     </FlexboxGrid.Item>
+        // </FlexboxGrid>
     )
 }
+
+
+// <FlexboxGrid justify="center">
+// <FlexboxGrid.Item colspan={12}>
+//     <Panel header={<h3>Login</h3>} bordered className="login">
+       
+//         <Form fluid>
+//             <FormGroup>
+//             {errorMessage != '' ?  <Message type="error" description={errorMessage}>Test</Message>: null}
+//                 <ControlLabel>Email</ControlLabel>
+//                 <FormControl name="email" type="email"  onChange={(e) => setValue( "email", e)}/>
+            
+//             </FormGroup>
+//             <FormGroup>
+//                 <ControlLabel>Password</ControlLabel>
+//                 <FormControl name="password" type="password"  onChange={(e) => setValue('password', e )}/>
+//             </FormGroup>
+//             <FormGroup>
+//                 <ButtonToolbar>
+//                     <Button appearance="primary" onClick={e =>handleLogin( user, e)}>Sign in</Button>
+//                 </ButtonToolbar>
+            
+//             </FormGroup>
+//         </Form>
+//     </Panel>
+// </FlexboxGrid.Item>
+// </FlexboxGrid>

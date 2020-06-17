@@ -1,0 +1,125 @@
+Started GET "/items" for ::1 at 2020-06-11 20:50:44 -0500
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (2.1ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:4:in `index'
+Completed 200 OK in 56ms (Views: 33.1ms | ActiveRecord: 3.0ms | Allocations: 15672)
+
+
+Started GET "/items" for ::1 at 2020-06-11 20:50:56 -0500
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.4ms | Allocations: 3015)
+
+
+Started GET "/getuser" for ::1 at 2020-06-11 20:50:56 -0500
+Processing by UsersController#get_user as */*
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mCart Load (0.9ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ? LIMIT ?[0m  [["user_id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:37:in `get_user'
+  [1m[36mCartItem Load (0.3ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."cart_id" = ?[0m  [["cart_id", 5]]
+  ↳ app/controllers/users_controller.rb:37:in `get_user'
+Completed 200 OK in 139ms (Views: 0.7ms | ActiveRecord: 4.8ms | Allocations: 19454)
+
+
+Started GET "/items" for ::1 at 2020-06-11 21:04:48 -0500
+Started GET "/getuser" for ::1 at 2020-06-11 21:04:48 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (1.0ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+Processing by UsersController#get_user as */*
+  ↳ app/controllers/items_controller.rb:4:in `index'
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+Completed 200 OK in 25ms (Views: 21.5ms | ActiveRecord: 1.0ms | Allocations: 3821)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mCart Load (0.6ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ? LIMIT ?[0m  [["user_id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:37:in `get_user'
+  [1m[36mCartItem Load (0.5ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."cart_id" = ?[0m  [["cart_id", 5]]
+  ↳ app/controllers/users_controller.rb:37:in `get_user'
+Completed 200 OK in 41ms (Views: 1.1ms | ActiveRecord: 4.3ms | Allocations: 5302)
+
+
+Started GET "/getuser" for ::1 at 2020-06-11 21:21:56 -0500
+Started GET "/items" for ::1 at 2020-06-11 21:21:56 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#index as */*
+Processing by UsersController#get_user as */*
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/controllers/items_controller.rb:4:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.7ms | Allocations: 3792)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mCart Load (0.4ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ? LIMIT ?[0m  [["user_id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:37:in `get_user'
+  [1m[36mCartItem Load (1.9ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."cart_id" = ?[0m  [["cart_id", 5]]
+  ↳ app/controllers/users_controller.rb:37:in `get_user'
+Completed 200 OK in 120ms (Views: 31.7ms | ActiveRecord: 3.0ms | Allocations: 5910)
+
+
+Started GET "/items/10" for ::1 at 2020-06-11 21:22:11 -0500
+Processing by ItemsController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:8:in `show'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 979)
+
+
+Started POST "/cart_items" for ::1 at 2020-06-11 21:22:14 -0500
+Processing by CartItemsController#create as */*
+  Parameters: {"cartItem"=>{"id"=>10, "name"=>"Minty Affair", "sku_number"=>"FADPBK2003", "color"=>"Mint", "size_s_quantity"=>0, "size_m_quantity"=>0, "size_l_quantity"=>1, "size_xl_quantity"=>0, "description"=>"Double georgette kurti with pipe and thread embroidery.", "image"=>"https://scontent.fhou1-1.fna.fbcdn.net/v/t1.0-9/96535169_1035605730170095_600926135856922624_n.jpg?_nc_cat=111&_nc_sid=110474&_nc_ohc=poLT-l-vFqkAX_Ap8fU&_nc_ht=scontent.fhou1-1.fna&oh=99ac50a9e194081246e3d91b813e7356&oe=5EFD11A4", "price"=>35, "category"=>"Kurtis", "created_at"=>"2020-06-11T02:00:18.567Z", "updated_at"=>"2020-06-11T02:00:18.567Z"}, "size"=>"L", "cart_item"=>{"size"=>"L"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ? LIMIT ?[0m  [["user_id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/cart_items_controller.rb:10:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cart_items_controller.rb:9:in `create'
+  [1m[36mCart Load (0.3ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/cart_items_controller.rb:9:in `create'
+  [1m[36mItem Load (0.1ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/cart_items_controller.rb:9:in `create'
+  [1m[36mCartItem Create (3.2ms)[0m  [1m[32mINSERT INTO "cart_items" ("cart_id", "item_id", "quantity", "size") VALUES (?, ?, ?, ?)[0m  [["cart_id", 5], ["item_id", 10], ["quantity", 1], ["size", "L"]]
+  ↳ app/controllers/cart_items_controller.rb:9:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cart_items_controller.rb:9:in `create'
+Completed 200 OK in 34ms (Views: 0.4ms | ActiveRecord: 5.4ms | Allocations: 9879)
+
+
+Started GET "/items" for ::1 at 2020-06-11 21:31:11 -0500
+Started GET "/getuser" for ::1 at 2020-06-11 21:31:11 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ItemsController#index as */*
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+Processing by UsersController#get_user as */*
+  ↳ app/controllers/items_controller.rb:4:in `index'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+Completed 200 OK in 21ms (Views: 16.1ms | ActiveRecord: 0.9ms | Allocations: 3360)
+
+
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4:in `current_user'
+  [1m[36mCart Load (1.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = ? LIMIT ?[0m  [["user_id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:37:in `get_user'
+  [1m[36mCartItem Load (0.8ms)[0m  [1m[34mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."cart_id" = ?[0m  [["cart_id", 5]]
+  ↳ app/controllers/users_controller.rb:37:in `get_user'
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:37:in `get_user'
+Completed 200 OK in 99ms (Views: 0.8ms | ActiveRecord: 2.8ms | Allocations: 6491)
+
+

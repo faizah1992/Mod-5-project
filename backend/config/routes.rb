@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :carts
   resources :cart_items
   
+  post('/charges', to: 'charges#create')
   get('/getuser', to: 'users#get_user')
   post('/login', to: 'authentication#login')
   get('/login', to: 'authentication#get_session_user')
