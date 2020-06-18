@@ -17,7 +17,7 @@ export default function Homepage(props) {
   let carouselTwo = require("../images/carousel_2.png");
   let carouselThree = require("../images/carousel_3.png");
   let carouselFour = require("../images/carousel_4.png");
-  let clientVideo = require("../images/Client Diaries.mp4")
+  let clientGif = require("../images/client_pic.gif")
   return (
     <div>
       <div className="container">
@@ -49,13 +49,7 @@ export default function Homepage(props) {
       </Carousel>
           </FlexboxGrid.Item>
           <FlexboxGrid.Item colspan={12} >
-            <div>
-              <video onClick={()=> history.push('/clientdiaries')} style={{ width:"55%"}}>
-                <source src={clientVideo}/>
-              </video>
-            {/* <img src="https://cutt.ly/6uWzONZ" onClick={()=> history.push('/clientdiaries')} className="w3-border"  style={{ width:"55%", borderStyle: "solid"}}/> */}
-            </div>
- 
+            <img src={clientGif} onClick={()=> history.push('/clientdiaries')} className="w3-border"  style={{ width:"55%", borderStyle: "solid"}}/>
           </FlexboxGrid.Item>          
         </FlexboxGrid>
       </div>

@@ -79,11 +79,11 @@ export default function CheckOut() {
     }
 
 
-
+    let totalPrice = cartAmount() 
+    let tax = Math.round(totalPrice * .0825 *100)/100
     let shipping = 10
-    let totalAmount = cartAmount()
-    let totalPrice = totalAmount - 10
-    let tax = (totalPrice * .0825)+totalPrice
+    let totalAmount = totalPrice + shipping + tax
+   
 
 
     return(
@@ -99,7 +99,7 @@ export default function CheckOut() {
            </tr>
             <tr>
                 <td>Shipping</td>
-                {cartItems && cartItems.length > 0 ?  <td>${shipping}</td> : <td>${0}</td>}
+                <td>${shipping}</td> 
             </tr>
             <tr>
                 <td>With Tax</td>
@@ -107,10 +107,11 @@ export default function CheckOut() {
             </tr>
             <tr> 
                 <td>Total</td>
-                <td>${totalAmount}</td>
+                {cartItems && cartItems.length > 0 ? <td>${totalAmount}</td> : <td>${0}</td>}
             </tr>
-            <hr/>
-            
+          
+            </table>
+                    <hr/>      
             <StripeCheckout
             disabled = {false}
             className="checkout-Button"
@@ -119,7 +120,6 @@ export default function CheckOut() {
             shippingAddress
             token={handleToken}
             />
-            </table>
                 </Panel>
         </Container>
         </div>

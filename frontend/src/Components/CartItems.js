@@ -55,7 +55,7 @@ export default function CartItems(props) {
        
         <div >
         <Col md={18} sm={2}>
-        <Panel shaded  style={{verticalAlign: 'middle', height: '460px'}} align='center'>
+        <Panel shaded  style={{verticalAlign: 'middle', height: '460px'}} align='center' className="Cart-item-image">
         <img src={image} style={{ display: 'inline-block', width: '80%'}} />
         <Divider/>
         {name}<Divider vertical/>{size} <Divider vertical/>${price}
