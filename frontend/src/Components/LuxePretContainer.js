@@ -18,7 +18,7 @@ export default function LuxePretContainer() {
         </Link>
         <Breadcrumb.Item active>Luxe-pret</Breadcrumb.Item>
       </Breadcrumb>
-      <h3>Luxe-Pret</h3>
+      <h3 style={{backgroundColor: "white"}}>Luxe-Pret</h3>
       <br></br>
       <Row>
         {filteredLuxe.map((item) => (

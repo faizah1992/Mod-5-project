@@ -28,7 +28,7 @@ export default function KurtisContainer() {
         </Link>
         <Breadcrumb.Item active>Kurtis</Breadcrumb.Item>
       </Breadcrumb>
-      <h3>Kurtis</h3>
+      <h3 style={{backgroundColor: "white"}}>Kurtis</h3>
       <br></br>
 
       <Row>

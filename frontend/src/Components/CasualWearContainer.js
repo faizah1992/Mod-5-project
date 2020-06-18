@@ -18,7 +18,7 @@ export default function CasualWearContainer() {
               <Link to={'/'}><Breadcrumb.Item >Home</Breadcrumb.Item></Link>
               <Breadcrumb.Item active>Casualwear</Breadcrumb.Item>
               </Breadcrumb>
-            <h3>Casual-Wear</h3>
+            <h3 style={{backgroundColor: "white"}}>Casual-Wear</h3>
             <br></br>
            <Row>
              {filteredCasuals.map(item => <ItemCard item={item} key={item.id}/>)}
