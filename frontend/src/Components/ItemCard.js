@@ -24,19 +24,3 @@ export default function ItemCard(props) {
   );
 }
 
-{
-  /* <FlexboxGrid justify="space-between">
-<FlexboxGrid.Item colspan={4}>{props.item.name}</FlexboxGrid.Item>
-<FlexboxGrid.Item colspan={4}>colspan={4}</FlexboxGrid.Item>
-<FlexboxGrid.Item colspan={4}>colspan={4}</FlexboxGrid.Item>
-<FlexboxGrid.Item colspan={4}>colspan={4}</FlexboxGrid.Item>
-</FlexboxGrid>
-
-<Col md={6} s={10}>
-<Panel className="cardbackground"shaded onClick={() => history.push(`/items/${props.item.id}`)} style={{verticalAlign: 'middle', height: '450px'}} align='center'>
-<img src={props.item.image} style={{ display: 'inline-block', width: '80%'}} />
-<Divider/>
-{props.item.name} <Divider vertical/>${props.item.price}
-</Panel>
-</Col>  */
-}

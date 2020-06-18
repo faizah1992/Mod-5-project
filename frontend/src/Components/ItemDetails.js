@@ -37,7 +37,7 @@ export default function ItemDetails(props) {
         .then(item => {
             console.log(item)
             setItem(item)
-          })
+        })
         }, [])
 
         let open =()=>{

@@ -256,6 +256,10 @@ color: black;
   left:80px;
   color: white
 }
+.Cart-item-image{
+  background-image: url(https://cutt.ly/3uErjA3);
+ 
+}
 .cartcount{
   position: absolute;
   padding: 5px 10px;
@@ -286,7 +290,8 @@ color: black;
 .table{
 float: middle;
 position: relative;
-margin-left: 9.5vw;
+margin-left: auto;
+margin-right: auto;
 }
 .subtotal{
   margin-left: 9.5vw;
