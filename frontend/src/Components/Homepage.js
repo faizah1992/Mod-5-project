@@ -17,6 +17,7 @@ export default function Homepage(props) {
   let carouselTwo = require("../images/carousel_2.png");
   let carouselThree = require("../images/carousel_3.png");
   let carouselFour = require("../images/carousel_4.png");
+  let clientVideo = require("../images/Client Diaries.mp4")
   return (
     <div>
       <div className="container">
@@ -38,9 +39,9 @@ export default function Homepage(props) {
         </Jumbotron>
       </div>
       <div className="show-grid">
-        <FlexboxGrid>
+        <FlexboxGrid style={{marginBottom: "50px"}}>
           <FlexboxGrid.Item colspan={12} >
-          <Carousel autoplay className="custom-slider" style={{width: "100%"}}>
+          <Carousel autoplay className="custom-slider" style={{width: "100%", marginLeft: "80px"}}>
         <img src={carouselTwo} height="250"  />
         <img src={carouselOne} height="250" />
         <img src={carouselThree} height="250" />
@@ -49,30 +50,24 @@ export default function Homepage(props) {
           </FlexboxGrid.Item>
           <FlexboxGrid.Item colspan={12} >
             <div>
-            <img src="img_snowtops.jpg" class="w3-border" alt="Norway" style="padding:16px;width:50%"/>
+              <video onClick={()=> history.push('/clientdiaries')} style={{ width:"55%"}}>
+                <source src={clientVideo}/>
+              </video>
+            {/* <img src="https://cutt.ly/6uWzONZ" onClick={()=> history.push('/clientdiaries')} className="w3-border"  style={{ width:"55%", borderStyle: "solid"}}/> */}
             </div>
  
           </FlexboxGrid.Item>          
         </FlexboxGrid>
-        <div style={{ display:"inline"}}>
-          {/* "hello" */}
-        </div>
       </div>
-      {/* <Carousel autoplay className="custom-slider">
-        <img src={carouselTwo} height="250" />
-        <img src={carouselOne} height="250" />
-        <img src={carouselThree} height="250" />
-        <img src={carouselFour} height="250" />
-      </Carousel> */}
 
-      <Divider />
+      {/* <Divider /> */}
 
       <h3>SHOP NOW</h3>
 
       <Panel shaded bordered className="shopnow">
         <div class="row">
           <div class="column">
-            <Card style={{ width: "18rem" }}>
+            <Card  shaded style={{ width: "18rem", backgroundColor:"rgb(230, 244, 245)" }}>
               <Card.Img variant="top" src="https://cutt.ly/5uhZAoB" />
               <Card.Body>
                 <Card.Title>
@@ -92,7 +87,7 @@ export default function Homepage(props) {
           </div>
 
           <div class="column">
-            <Card style={{ width: "18rem" }}>
+            <Card style={{ width: "18rem", backgroundColor:"rgb(230, 244, 245)" }}>
               <Card.Img variant="top" src="https://cutt.ly/IuhCcoW" />
               <Card.Body>
                 <Card.Title>
@@ -112,7 +107,7 @@ export default function Homepage(props) {
           </div>
 
           <div class="column">
-            <Card style={{ width: "18rem" }}>
+            <Card style={{ width: "18rem", backgroundColor:"rgb(230, 244, 245)" }}>
               <Card.Img variant="top" src="https://cutt.ly/quhCita" />
               <Card.Body>
                 <Card.Title>
@@ -132,7 +127,7 @@ export default function Homepage(props) {
           </div>
 
           <div class="column">
-            <Card style={{ width: "18rem" }}>
+            <Card style={{ width: "18rem", backgroundColor:"rgb(230, 244, 245)" }}>
               <Card.Img variant="top" src="https://cutt.ly/2uhCIVC" />
               <Card.Body>
                 <Card.Title>

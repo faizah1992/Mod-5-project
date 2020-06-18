@@ -7,7 +7,7 @@ export default function Refund(props) {
                 
     return( 
         <div>
-        <h1 className="refund-policy" >Return and Refund Policy</h1>
+        <h1  style={{color:"black", backgroundColor: "white"}}className="refund-policy" >Return and Refund Policy</h1>
         <Panel bordered>  
         <p>Thank you for purchasing our products at www.Faizahahsandesigns.com operated by Faizah Ahsan Designs™.
             In order to be eligible for a refund, you have to cancel the order within 24 hours of your purchase. 

@@ -29,6 +29,7 @@ import Refund from "./Components/Refund";
 import ContactUs from "./Components/ContactUs";
 import OrderProcessing from "./Components/OrderProcessing";
 import NewArrivals from "./Components/NewArrivals";
+import ClientDiaries from "./Components/ClientDiaries"
 
 function App(props) {
   let history = useHistory();
@@ -84,6 +85,7 @@ function App(props) {
           <Route exact path="/order" component={OrderProcessing} />
           <Route exact path="/return-refund-policy" component={Refund} />
           <Route exact path="/newarrivals" component={NewArrivals} />
+          <Route exact path="/clientdiaries" component={ClientDiaries} />
         </Switch>
         <Footer />
       </BrowserRouter>

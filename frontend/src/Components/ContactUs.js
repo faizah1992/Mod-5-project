@@ -4,7 +4,7 @@ import { Divider,Icon, Panel } from 'rsuite';
 export default function ContactUs(props) {
     return(
         <div>
-            <h1 className="contact-header">We're here to help!</h1>
+            <h1 style={{backgroundColor: "white"}} className="contact-header">We're here to help!</h1>
             <Divider/>
             <div className="contactpage">
             <Icon icon="phone" size="2x"/>

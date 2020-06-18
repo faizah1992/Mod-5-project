@@ -23,7 +23,7 @@ export default function Search() {
     // console.log(filteredItems)
     return(
         <div>
-             <h2>Search Products</h2><InputGroup className='search-bar' inside style={styles} >
+             <h2 style={{color:"black", backgroundColor: "white"}}>Search Products</h2><InputGroup className='search-bar' inside style={styles} >
             <Input  onChange={(e)=>handleSearch(e)} />
             <InputGroup.Addon>
             <Icon icon="search" />

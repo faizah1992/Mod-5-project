@@ -40,9 +40,15 @@ export default function ItemDetails(props) {
           })
         }, [])
 
-
+        let open =()=>{
+            Notification.open({
+                title: 'ADDED!',
+                description: <Paragraph width={320} rows={3} />
+              });
+        }
 
     let createCartItem = (cartItem, size)=>{
+        open()
         fetch('http://localhost:3000/cart_items',{
         credentials: 'include',
         method: "POST",
@@ -61,12 +67,7 @@ export default function ItemDetails(props) {
         })
     }
 
-    let open =()=>{
-        Notification.open({
-            title: 'ADDED!',
-            description: <Paragraph width={320} rows={3} />
-          });
-    }
+
 
 
 
@@ -90,9 +91,9 @@ export default function ItemDetails(props) {
                         <h5>${item.price}</h5>
                         <h5>Color: {item.color}</h5>
                         <h6>Description: {item.description}</h6>
-                        <Dropdown title= "Size">
+                        <Dropdown title={size || "Size"} >
                         {item.size_s_quantity > 0 ? 
-                        <Dropdown.Item value={item.size_s_quantity} onSelect={()=> setSize("S")}>S</Dropdown.Item>: ''}
+                        <Dropdown.Item  value={item.size_s_quantity} onSelect={()=> setSize("S")}>S</Dropdown.Item>: ''}
                         {item.size_m_quantity > 0 ? 
                         <Dropdown.Item value={item.size_m_quantity} onClick={()=> setSize("M")}>M</Dropdown.Item>: ''}
                         {item.size_l_quantity > 0 ? 
@@ -104,7 +105,7 @@ export default function ItemDetails(props) {
                         {!user?
                         <Button appearance="ghost" disabled > Login to Add To Cart</Button>
                         :
-                        <Button appearance="ghost" onClick={()=> createCartItem(item, size), open}>Add To Cart</Button>
+                        <Button appearance="ghost" onClick={()=> createCartItem(item, size)}>Add To Cart</Button>
                         }
                     </Panel>
                     </FlexboxGrid.Item>

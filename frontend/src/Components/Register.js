@@ -131,7 +131,7 @@ export default function Register(props) {
                         <FormGroup>
                         {message != '' ?  <Message type="success" description={message}>Test</Message>: null}
                             <ControlLabel>First Name</ControlLabel>
-                            {errors.first_name && <p>{errors.first_name}</p>}
+                            {errors.first_name && <p style={{color: "red"}}>{errors.first_name}</p>}
                             <FormControl 
                                 name='first_name'  
                                 onChange={e => {
@@ -144,7 +144,7 @@ export default function Register(props) {
                         </FormGroup>
                         <FormGroup>
                             <ControlLabel>Last Name</ControlLabel>
-                            {errors.last_name && <p>{errors.last_name}</p>}
+                            {errors.last_name && <p style={{color: "red"}}>{errors.last_name}</p>}
                             <FormControl 
                                 name="last_name"
                                 onChange={e => {
@@ -157,7 +157,7 @@ export default function Register(props) {
                             
                         </FormGroup>
                         <FormGroup>
-                        {errors.email && <p>{errors.email}</p>}
+                        {errors.email && <p style={{color: "red"}}>{errors.email}</p>}
                             <ControlLabel>Email</ControlLabel>
                             <FormControl 
                                 name="email"  
@@ -170,7 +170,7 @@ export default function Register(props) {
                             />
                         </FormGroup>
                         <FormGroup>
-                        {errors.password && <p>{errors.password}</p>}
+                        {errors.password && <p style={{color: "red"}}>{errors.password}</p>}
                             <ControlLabel>Password</ControlLabel>
                             <FormControl 
                                 name="password"
@@ -185,7 +185,7 @@ export default function Register(props) {
                         </FormGroup>
                         <FormGroup>
                         <FormGroup>
-                        {errors.phone_number && <p>{errors.phone_number}</p>}
+                        {errors.phone_number && <p style={{color: "red"}}>{errors.phone_number}</p>}
                             <ControlLabel>Phone Number</ControlLabel>
                             <FormControl 
                                 name="phone_number"
@@ -198,7 +198,7 @@ export default function Register(props) {
                             />
                         </FormGroup>
                         <FormGroup>
-                        {errors.address && <p>{errors.address}</p>}
+                        {errors.address && <p style={{color: "red"}}>{errors.address}</p>}
                             <ControlLabel>Address</ControlLabel>
                             <FormControl 
                                 name="address"
