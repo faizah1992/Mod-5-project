@@ -37,7 +37,7 @@
 - React Router [^5.1.2] - Declarative Routing
 - React Router Dom [^5.1.2] - Declarative Routing
 - Redux [4.0.5]
-- React UI
+- RSuite
 - Custom CSS3 styling
 - React Stripe Checkout [^2.6.3] 
 
