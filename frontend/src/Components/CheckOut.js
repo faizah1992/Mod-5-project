@@ -7,6 +7,7 @@ import { useHistory } from 'react-router-dom';
 export default function CheckOut() {
     let history = useHistory()
     let cartItems = useSelector(state=> state.cartItems)
+    
     let user = useSelector(state => state.user)
     let dispatch = useDispatch()
     console.log(cartItems)
