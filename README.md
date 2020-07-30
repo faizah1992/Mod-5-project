@@ -8,7 +8,6 @@
 - [Description](#description)
 - [Features](#features)
 - [Teach Stack](#techstack)
-- [Code Guide](#codeguide)
 - [Installing](#installing)
 
 ## Description
