@@ -7,7 +7,7 @@
 ### Table of Contents 
 - [Description](#description)
 - [Features](#features)
-- [Teach Stack](#tech Stack)
+- [Teach Stack](#techStack)
 - [Installing](#installing)
 
 ## Description
@@ -31,7 +31,7 @@
 - Delete
    - Users can delete their account
  
-## Tech Stack 
+## TechStack 
 **Frontend** 
 - React.js
 - React Router [^5.1.2] - Declarative Routing
