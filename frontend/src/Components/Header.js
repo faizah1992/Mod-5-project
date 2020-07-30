@@ -24,6 +24,7 @@ export default function Header(props) {
   let user = useSelector((state) => state.user);
   let cartItems = useSelector((state) => state.cartItems);
   let history = useHistory();
+  let logoSource = require("../images/logo.jpg")
   let cartCount = cartItems
     ? cartItems
         .map((ct) => ct.quantity)
@@ -59,7 +60,7 @@ export default function Header(props) {
     <div>
       <Panel className="main-header">
         <a href="/">
-          <img className="logo" src="http://tiny.cc/7urjqz" />
+          <img className="logo" src={logoSource} />
         </a>
         <Icon
           className="search-icon"

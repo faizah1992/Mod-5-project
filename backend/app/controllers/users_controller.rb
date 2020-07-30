@@ -20,9 +20,10 @@ class UsersController < ApplicationController
             cart = Cart.create({
                 user_id: user.id
             })
-           
+          
             render(json: user, :include => [:cart])
         else
+           
             render(json: {error: "Email already exists."})
         end
     end
