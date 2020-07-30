@@ -7,7 +7,7 @@
 ### Table of Contents 
 - [Description](#description)
 - [Features](#features)
-- [Teach Stack](#techstack)
+- [Teach Stack](#tech Stack)
 - [Installing](#installing)
 
 ## Description
