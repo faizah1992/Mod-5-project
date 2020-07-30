@@ -51,13 +51,13 @@
 - PostgreSQL [>= 0.18, < 2.0] - Database
 - Stripe - Stripe Ruby gives access to the Stripe API from applications written in the Ruby language
 
-## Code Guide 
+<!-- ## Code Guide 
 If you would like to take a closer look at the code behind the Faizah Ahsan Designs App, the best folders to look in are:
 - [index.js](src/index.js)
 - [React Components](src/Components)
 - [Redux Folder](src/Redux)
 - [App.js](src/App.js) 
-- [Stripe API](src/Components/CheckOut.js)
+- [Stripe API](src/Components/CheckOut.js) -->
 
 ## Installing
 **Backend Installation:**
